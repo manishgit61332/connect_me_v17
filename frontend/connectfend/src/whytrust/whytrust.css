@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+.trust-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 60px;
+  padding: var(--spacing-section) var(--spacing-container);
+
+  box-sizing: border-box;
+  font-family: "Oxygen", sans-serif;
+}
+
+/* LEFT SIDE */
+.trust-left {
+  flex: 1;
+  max-width: 650px;
+}
+
+.trust-title {
+  font-size: var(--font-h1);
+  font-weight: 700;
+  line-height: var(--lh-tight);
+  color: var(--color-primary);
+  margin-bottom: 70px;
+  text-align: left;
+}
+
+.trust-text {
+  font-size: var(--font-body-lg);
+  line-height: var(--lh-normal);
+  color: var(--color-text-dark);
+  text-align: left;
+  margin-bottom: 70px;
+}
+
+/* RIGHT SIDE */
+.trust-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.trust-right img {
+  width: 100%;
+  max-width: 750px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  /* Add shadow for polish */
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .trust-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 24px;
+    /* Reduced vertical and matched horizontal padding */
+    gap: 40px;
+  }
+
+  .trust-left,
+  .trust-text,
+  .trust-title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .trust-section {
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  .trust-title {
+    font-size: clamp(1.875rem, 6vw, 2.5rem);
+    margin-bottom: 30px;
+  }
+
+  .trust-text {
+    font-size: clamp(1rem, 3vw, 1.25rem);
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+
+  .trust-right img {
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .trust-section {
+    padding: 30px 15px;
+  }
+
+  .trust-title {
+    font-size: 1.875rem;
+    margin-bottom: 25px;
+  }
+
+  .trust-text {
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+}
+
+/* ULTRA-WIDE SCREENS (4K+) */
+@media (min-width: 2500px) {
+  .trust-section {
+    padding: 120px 100px;
+    gap: 120px;
+  }
+
+  .trust-left {
+    max-width: 1000px;
+  }
+
+  .trust-title {
+    font-size: 80px;
+    margin-bottom: 60px;
+  }
+
+  .trust-text {
+    font-size: 36px;
+    margin-bottom: 80px;
+  }
+
+  .trust-right img {
+    max-width: 1200px;
+  }
+}

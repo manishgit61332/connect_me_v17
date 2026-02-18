@@ -1,0 +1,907 @@
+/* src/productDetails/productDetails.css */
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+.pd-page {
+  font-family: var(--font-main);
+  color: var(--color-text-body);
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: var(--spacing-section) 5%;
+}
+
+.pd-not-found {
+  text-align: center;
+  padding: 100px;
+  font-size: var(--font-h4);
+  color: #888;
+}
+
+/* BREADCRUMBS */
+.pd-back-wrapper {
+  margin-bottom: 20px;
+}
+
+.pd-back-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid #333;
+  color: #333;
+  font-size: 18px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.pd-back-btn:hover {
+  background: #333;
+  color: white;
+  transform: translateX(-5px);
+}
+
+.pd-breadcrumb {
+  font-size: var(--font-caption);
+  color: var(--color-text-muted);
+  margin-bottom: 40px;
+}
+
+.pd-breadcrumb a {
+  color: #666;
+  text-decoration: none;
+}
+
+.pd-breadcrumb a:hover {
+  color: #26AAE3;
+}
+
+/* HERO SECTION */
+.pd-hero {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 80px;
+}
+
+.pd-hero-content {
+  flex: 1;
+}
+
+.pd-title {
+  font-size: var(--font-h1);
+  font-weight: 700;
+  line-height: var(--lh-tight);
+  color: #111;
+  /* Restore v12 dark contrast */
+  margin-bottom: 20px;
+}
+
+.pd-tagline {
+  font-size: var(--font-h3);
+  color: #333;
+  /* Restore v12 body-contrast tagline */
+  margin-bottom: 20px;
+  line-height: var(--lh-tight);
+}
+
+.pd-overview {
+  margin-bottom: 40px;
+}
+
+.pd-overview p {
+  font-size: var(--font-body);
+  line-height: var(--lh-loose);
+  font-weight: 400;
+  color: var(--color-text-body);
+  margin-bottom: 10px;
+}
+
+.pd-actions {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: #fff;
+  padding: 14px 32px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: var(--font-body);
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.btn-primary:hover {
+  background: #1e8bbd;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid #ddd;
+  color: var(--color-text-muted);
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: var(--font-body);
+  cursor: pointer;
+}
+
+.btn-secondary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.pd-hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  background: #fcfcfc;
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.pd-hero-image img {
+  max-width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+}
+
+/* TABS */
+.pd-tabs {
+  display: flex;
+  gap: 30px;
+  border-bottom: 2px solid #eee;
+  margin-bottom: 30px;
+}
+
+.pd-tab-btn {
+  background: transparent;
+  border: none;
+  font-size: var(--font-body);
+  font-weight: 600;
+  color: #888;
+  padding: 10px 5px;
+  cursor: pointer;
+  position: relative;
+  font-family: inherit;
+  transition: color 0.3s;
+}
+
+.pd-tab-btn.active {
+  color: #26AAE3;
+  font-size: var(--font-body-lg);
+  font-weight: 600;
+}
+
+.pd-tab-btn.active::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #26AAE3;
+  animation: fadeIn 0.3s;
+}
+
+.pd-tab-content {
+  min-height: 400px;
+  /* Avoid layout shift */
+}
+
+/* FADE IN ANIM FOR TAB CONTENT */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.pd-tab-panel {
+  animation: fadeIn 0.4s ease-out;
+}
+
+/* SECTION HEADERS WITHIN TABS */
+.section-title {
+  font-size: var(--font-h3);
+  line-height: var(--lh-tight);
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-top: 32px;
+  color: #222;
+  /* Uniform dark professional header */
+}
+
+/* --- TOSI SPECIALIZED VIEW STYLES --- */
+.pd-tosi-theme .pd-hero {
+  background: transparent;
+}
+
+.pd-tosi-content {
+  margin-top: 3rem;
+}
+
+.pd-tosi-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: flex-start;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #eaeaea;
+  margin-bottom: 2rem;
+}
+
+.pd-tosi-tabs .pd-tab-btn {
+  padding: 0.6rem 1.2rem;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.pd-tosi-variant-panel {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.variant-title {
+  font-size: var(--font-h4);
+  line-height: 1.3;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-top: 32px;
+  color: #2c3e50;
+}
+
+.variant-overview {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-left: 4px solid #007bff;
+  border-radius: 4px;
+}
+
+.variant-overview h4,
+.variant-specs h4,
+.subsection-title {
+  font-size: var(--font-body-lg);
+  line-height: 1.4;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #495057;
+  margin-top: 24px;
+}
+
+.variant-overview p {
+  font-size: var(--font-body-sm);
+  line-height: 1.7;
+  font-weight: 400;
+  color: #444;
+}
+
+/* STRUCTURED SPECS STYLES */
+.spec-category {
+  font-size: var(--font-body);
+  font-weight: 600;
+  color: #222;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.spec-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.spec-list li {
+  font-size: var(--font-body-sm);
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 4px;
+  padding-left: 0;
+}
+
+/* Deprecating .variant-specs-pre, keeping for fallback */
+.variant-specs-pre {
+  background: transparent;
+  color: #444;
+  padding: 0;
+  font-family: "Oxygen", sans-serif;
+  font-size: var(--font-body-sm);
+  line-height: 1.7;
+  white-space: pre-wrap;
+  border: none;
+}
+
+/* OVERVIEW TEXT */
+.pd-overview-text p {
+  font-size: var(--font-body-sm);
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* FEATURES LIST */
+.pd-features-list {
+  list-style: disc;
+  /* Bullet points */
+  padding-left: 20px;
+  /* Indent */
+  display: block;
+  /* Stack vertically */
+  margin-top: 10px;
+}
+
+.pd-features-list li {
+  background: transparent;
+  padding: 8px 0;
+  border-radius: 0;
+  border-left: none;
+  font-size: var(--font-body-sm);
+  line-height: 1.6;
+  color: #444;
+}
+
+/* SPECS TABLE */
+.pd-specs-table-wrapper {
+  overflow-x: auto;
+}
+
+.pd-specs-table {
+  width: 100%;
+  border-collapse: collapse;
+  max-width: 800px;
+  font-size: var(--font-body-sm);
+  /* Standardized font size */
+}
+
+.pd-specs-table td {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.spec-label {
+  font-weight: 700;
+  color: #555;
+  width: 30%;
+  background: #fdfdfd;
+}
+
+.spec-value {
+  color: #222;
+}
+
+/* RELATED GRID */
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.related-card {
+  text-decoration: none;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.related-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.related-img {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.related-img img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.related-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .pd-hero {
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+
+  .pd-hero-image img {
+    max-height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pd-page {
+    padding: 30px 20px;
+  }
+
+  .pd-breadcrumb {
+    font-size: 13px;
+    margin-bottom: 25px;
+  }
+
+  .pd-hero {
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+
+  .pd-title {
+    font-size: clamp(1.75rem, 6vw, 2.25rem);
+    margin-bottom: 15px;
+  }
+
+  .pd-tagline {
+    font-size: 17px;
+    margin-bottom: 15px;
+  }
+
+  .pd-overview p {
+    font-size: 16px;
+  }
+
+  .pd-actions {
+    gap: 15px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    text-align: center;
+    padding: 16px 24px;
+    min-height: 50px;
+    font-size: 16px;
+  }
+
+  .pd-hero-image {
+    padding: 30px;
+  }
+
+  .pd-hero-image img {
+    max-height: 220px;
+  }
+
+  .pd-tabs {
+    gap: 20px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+
+  .pd-tab-btn {
+    font-size: 16px;
+    white-space: nowrap;
+    min-width: fit-content;
+  }
+
+  .pd-tab-content {
+    min-height: 300px;
+  }
+
+  .pd-overview-text p {
+    font-size: 15px;
+  }
+
+  .pd-features-list li {
+    font-size: 15px;
+  }
+
+  .pd-specs-table td {
+    padding: 12px;
+    font-size: 15px;
+  }
+
+  .spec-label {
+    width: 40%;
+  }
+
+  .related-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .related-img {
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pd-page {
+    padding: 20px 15px;
+  }
+
+  .pd-not-found {
+    padding: 60px 20px;
+    font-size: 18px;
+  }
+
+  .pd-breadcrumb {
+    font-size: 12px;
+  }
+
+  .pd-hero {
+    gap: 25px;
+    margin-bottom: 40px;
+  }
+
+  .pd-title {
+    font-size: 1.75rem;
+  }
+
+  .pd-tagline {
+    font-size: 16px;
+  }
+
+  .pd-overview p {
+    font-size: 15px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    padding: 14px 20px;
+    font-size: 15px;
+  }
+
+  .pd-hero-image {
+    padding: 20px;
+  }
+
+  .pd-tabs {
+    gap: 15px;
+  }
+
+  .pd-tab-btn {
+    font-size: 15px;
+    padding: 8px 3px;
+  }
+
+  .pd-specs-table td {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .spec-label {
+    width: 45%;
+  }
+
+  .related-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .related-card {
+    padding: 12px;
+  }
+
+  .related-img {
+    height: 100px;
+  }
+
+  .related-title {
+    font-size: 13px;
+  }
+}
+
+/* TOSI MOBILE RESPONSIVE STYLES */
+@media (max-width: 768px) {
+  .pd-tosi-tabs {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    gap: 8px;
+    padding-bottom: 1.5rem;
+  }
+
+  .pd-tosi-tabs .pd-tab-btn {
+    padding: 0.5rem 0.8rem;
+    font-size: 14px;
+    min-width: max-content;
+  }
+
+  .variant-title {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .variant-overview {
+    padding: 1rem;
+  }
+
+  .variant-overview p {
+    font-size: var(--font-body-sm);
+  }
+
+  .variant-overview h4,
+  .variant-specs h4 {
+    font-size: var(--font-body-lg);
+    margin-top: 16px;
+  }
+
+  .spec-category {
+    font-size: var(--font-body-sm);
+  }
+
+  .spec-list li {
+    font-size: var(--font-body-sm);
+  }
+}
+
+@media (max-width: 480px) {
+  .pd-tosi-tabs {
+    gap: 6px;
+    padding-bottom: 1rem;
+  }
+
+  .pd-tosi-tabs .pd-tab-btn {
+    padding: 0.4rem 0.6rem;
+    font-size: var(--font-caption);
+  }
+
+  .variant-title {
+    font-size: var(--font-body-lg);
+    margin-top: 16px;
+  }
+
+  .variant-overview {
+    padding: 0.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .variant-overview p {
+    font-size: var(--font-body-sm);
+    line-height: 1.6;
+  }
+
+  .variant-overview h4,
+  .variant-specs h4 {
+    font-size: var(--font-body-sm);
+    margin-top: 12px;
+  }
+
+  .spec-category {
+    font-size: var(--font-body-sm);
+  }
+
+  .spec-list li {
+    font-size: var(--font-caption);
+    line-height: 1.6;
+  }
+
+  .pd-tosi-general-desc p {
+    font-size: var(--font-body-sm);
+    line-height: 1.6;
+  }
+}
+
+/* NEW DATA TABLES (Dimensions, Flow, Order Codes) */
+.pd-data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: var(--font-body-sm);
+  min-width: 600px;
+  /* Ensure table doesn't get too squashed on mobile */
+}
+
+.pd-data-table th,
+.pd-data-table td {
+  padding: 12px 15px;
+  border: 1px solid #eee;
+  text-align: left;
+}
+
+.pd-data-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #333;
+  white-space: nowrap;
+}
+
+.pd-data-table tr:nth-child(even) {
+  background-color: #fcfcfc;
+}
+
+.pd-data-table tr:hover {
+  background-color: #f0f7fb;
+}
+
+/* Media query adjustment for table font size on mobile */
+@media (max-width: 768px) {
+  .pd-data-table {
+    font-size: var(--font-caption);
+  }
+
+  .pd-data-table th,
+  .pd-data-table td {
+    padding: 10px 10px;
+  }
+}
+
+/* --- UNIFIED PRODUCT GRID STYLES (For Variant Parent Page) --- */
+.unified-products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.premium-product-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.premium-product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+  border-color: #26AAE3;
+}
+
+.product-image-wrapper {
+  height: 250px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9f9f9;
+  border-bottom: 1px solid #eee;
+}
+
+.product-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.premium-product-card:hover .product-image {
+  transform: scale(1.05);
+}
+
+.product-details {
+  padding: 25px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-subtitle {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #999;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.product-title {
+  font-size: var(--font-body-lg);
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.product-description {
+  font-size: var(--font-body-sm);
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.product-specs-preview {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.spec-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.spec-key {
+  color: #555;
+  font-weight: 600;
+}
+
+.spec-val {
+  color: #888;
+  text-align: right;
+  max-width: 60%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.tag-badge {
+  background: #f0f7fb;
+  color: #26AAE3;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.view-more-link {
+  display: inline-block;
+  color: #26AAE3;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 15px;
+  margin-top: auto;
+  transition: color 0.2s;
+}
+
+.view-more-link:hover {
+  color: #1a8abf;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .unified-products-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* TOSI OVERLAY ICON */
+.pd-hero-image {
+  position: relative;
+  /* Ensure container is relative for absolute positioning */
+}
+
+.tosi-hero-overlay {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  /* Adjust size as needed */
+  height: auto;
+  z-index: 10;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .tosi-hero-overlay {
+    width: 40px;
+    top: 5px;
+    right: 5px;
+  }
+}

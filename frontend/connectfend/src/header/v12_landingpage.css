@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+/* Main Container */
+.landing-container {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-bg);
+  /* Clean white background */
+  padding: 0 var(--spacing-container);
+  /* Matched to Header padding */
+  box-sizing: border-box;
+}
+
+.hero-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100%;
+  /* Allow full width alignment with header */
+  gap: 4rem;
+}
+
+/* Left Column: Text Section */
+.hero-text-section {
+  flex: 1;
+  max-width: 600px;
+  animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-title {
+  font-family: 'Oxygen', sans-serif;
+  font-size: var(--font-big);
+  font-weight: 700;
+  line-height: 1.1;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+}
+
+.highlight-text {
+  color: var(--color-primary);
+  /* Premium Blue Accent */
+  background: linear-gradient(120deg, var(--color-primary) 0%, #00d2ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+  font-family: 'Oxygen', sans-serif;
+  font-size: var(--font-h4);
+  line-height: var(--lh-normal);
+  color: var(--color-text-muted);
+  margin-bottom: 2.5rem;
+  max-width: 90%;
+}
+
+.hero-cta-group {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.cta-button {
+  padding: 14px 32px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.cta-button.primary {
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  box-shadow: 0 4px 15px rgba(38, 170, 227, 0.3);
+}
+
+.cta-button.primary:hover {
+  background: #1e8dbd;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(38, 170, 227, 0.4);
+}
+
+.cta-button.secondary {
+  background: transparent;
+  color: #1a1a1a;
+  border: 2px solid #e1e1e1;
+}
+
+.cta-button.secondary:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+/* Right Column: Windowed Video */
+.hero-window {
+  flex: 1.2;
+  /* Slightly larger video area */
+  position: relative;
+  height: auto;
+  aspect-ratio: 16/9;
+  /* Cinematic ratio */
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.15);
+  /* Premium soft shadow */
+  transition: transform 0.4s ease;
+}
+
+.hero-window:hover {
+  transform: scale(1.01);
+  /* Subtle interactive feel */
+}
+
+/* Background Video inside the window */
+.landing-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  opacity: 0;
+  /* Hidden initially */
+  transition: opacity 0.8s ease-in-out;
+}
+
+.landing-video.loaded {
+  opacity: 1;
+  /* Fade in when ready */
+}
+
+/* LOADING SPINNER OVERLAY */
+.video-loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f5f5f5;
+  /* Light skeleton background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #26AAE3;
+  /* Primary Blue */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .hero-content-wrapper {
+    flex-direction: column-reverse;
+    /* Text on top on mobile? actually column usually puts first item top. Wrapper puts text left via row. column-reverse would put text bottom. Let's do normal column for image top or text top. Usually text top on mobile. */
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .hero-text-section {
+    max-width: 100%;
+    margin-top: 2rem;
+  }
+
+  .hero-subtitle {
+    margin: 0 auto 2rem auto;
+  }
+
+  .hero-cta-group {
+    justify-content: center;
+  }
+
+  .hero-window {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  /* Tablet Typography */
+  .hero-title {
+    font-size: 3rem;
+    /* Reduce from 4rem on tablet */
+  }
+}
+
+@media (max-width: 600px) {
+  .landing-container {
+    padding: 0 24px;
+    /* Match Header Padding */
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+    /* Smaller on mobile */
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    padding: 12px 24px;
+    font-size: 0.9rem;
+    width: 100%;
+    /* Full width buttons on mobile? Maybe too much, let's keep auto but ensure they fit */
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    /* Stack buttons on very small screens */
+    width: 100%;
+    align-items: center;
+    /* Center buttons */
+    gap: 15px;
+  }
+
+  .cta-button {
+    width: 100%;
+    max-width: 280px;
+    /* Prevent overly wide buttons */
+  }
+
+  .hero-text-section {
+    text-align: center;
+    /* Enforce center text */
+  }
+}
+
+/* ULTRA-WIDE SCREENS (4K+) */
+@media (min-width: 2500px) {
+  .landing-container {
+    padding: 0 100px;
+  }
+
+  /* Make hero content wide but centered */
+  .hero-content-wrapper {
+    max-width: 2800px;
+    margin: 0 auto;
+    gap: 100px;
+  }
+
+  .hero-title {
+    font-size: 6rem;
+  }
+
+  .hero-subtitle {
+    font-size: 2rem;
+    max-width: 100%;
+  }
+
+  .cta-button {
+    font-size: 1.5rem;
+    padding: 20px 48px;
+  }
+
+  .hero-window {
+    border-radius: 40px;
+  }
+
+  .video-loader .spinner {
+    width: 80px;
+    height: 80px;
+    border-width: 8px;
+  }
+}

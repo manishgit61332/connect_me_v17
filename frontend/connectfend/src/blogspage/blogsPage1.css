@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+
+.blogs-section {
+  padding: 30px 0 60px;
+  font-family: "Oxygen", sans-serif;
+}
+
+.blogs-title {
+  font-size: 34px;
+  font-weight: 700;
+  margin-left: 60px;
+  margin-bottom: 25px;
+  color: #000;
+}
+
+/* ===========================
+   2 CARDS PER ROW (CENTERED)
+   =========================== */
+.readmore-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 20px auto 0;
+  flex-wrap: nowrap;
+}
+
+/* ===========================
+   CARD DESIGN — EXACT MATCH
+   =========================== */
+.readmore-card {
+  width: 650px;              /* EXACT width from screenshot */
+  height: 260px;             /* same height */
+  background: #ffffff;
+  border-radius: 12px;
+  display: flex;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15); /* bigger soft shadow */
+  transition: transform 0.2s ease;
+}
+
+.readmore-card:hover {
+  transform: translateY(-4px);
+}
+
+/* IMAGE (Left 50%) */
+.rm-img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* TEXT SIDE (Right 50%) */
+.rm-content {
+  width: 50%;
+  padding: 28px 22px;
+  position: relative;
+}
+
+.rm-title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 12px;
+  color: #000;
+}
+
+.rm-meta {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: auto;
+  opacity: 0.8;
+}
+
+/* ===========================
+   READ MORE SECTION (BOTTOM RIGHT)
+   =========================== */
+.rm-read {
+  position: absolute;
+  bottom: 18px;
+  right: 22px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.rm-arrow {
+  font-size: 32px;      /* EXACT arrow size */
+  color: #ff7f2a;       /* big orange arrow */
+}
+
+.rm-read span {
+  color: #26AAE3;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* ===========================
+   PAGINATION
+   =========================== */
+.pagination {
+  margin-top: 35px;
+  text-align: center;
+}
+
+.pagination button {
+  background: none;
+  border: none;
+  margin: 0 10px;
+  font-size: 20px;
+  color: #444;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.pagination .active {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.pagination button:hover {
+  color: #26AAE3;
+}

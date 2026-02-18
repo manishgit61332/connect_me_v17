@@ -1,0 +1,81 @@
+{
+  "sheet_name": "54",
+  "data": [
+    [],
+    [],
+    [
+      "S.No",
+      "GATEWAY AND CONNECTIVITY",
+      "Folder name",
+      "Product no",
+      "Product brief"
+    ],
+    [
+      "54",
+      "3. Gateways",
+      "LoRaWAN Gateway",
+      "",
+      "Kerlink INDOOR: \n  Range: -20°C +55°C, (for gateway only, without power supply)\n  Casing: IP30\n  Humidity: 5% to 95%\n\nKerlink OUTDOOR:\n   Range: -40°C +60°C\n   Casing: IP67 Alu (Back), Polycarbonate (Front), Inox\n(mounting kit)\n    Humidity: 95%\n\nCloudGate Mini:\n    Humidity: 5% - 95%\n    Range: -40°C to +85°C\n   Case: Aluminium case"
+    ],
+    [],
+    [
+      "",
+      "Basic Featuers"
+    ],
+    [
+      "",
+      "Kerlink Indoor: \n• Indoor LoRa® Gateway\n• Ingress protection (IP30)\n• Backhaul connectivity: Wi-Fi 2.4GHz and Ethernet (RJ45)\n• Supported LoRaWAN® regional parameters: EU863-870, IN865-\n867, RU864-870, US902-928, AU915-928, AS923, KR920-923\n\nKerlink Outdoor:\n• Outdoor LoRa® Gateway,\n• Carrier grade casing (IP67) for industrial use\n• Backhaul connectivity: 4G Worldwide module with 3G/2G\nfallback and Ethernet (RJ45)\n• Supported LoRaWAN® regional parameters: EU863-870, IN865-\n867, RU864-870, US902-928, AU915-928, AS923, KR920-923\n\nCloudGate Mini:\n• Worldwide LTE Cat 4 Programmable Multicarrier Gateway with 3G fallback\n• A wide variety of wired interfaces with pre-installed versatile IO card\n• Optional WiFi and LoRaWAN in rear expansion slot\n• Secure remote access to Ethernet-connected devices\n• Optional battery backup"
+    ],
+    [],
+    [],
+    [],
+    [
+      "",
+      "Overview"
+    ],
+    [
+      "",
+      "Kerlink Indoor:\nThe “Wirnet™ iFemtoCell” is the ideal gateway to support your smart\ncity, smart building or every smart project that requests dedicated\nindoor coverage and/or network densification, providing both a unique\nsuperior coverage and operational excellence.\n\nKerlink Outdoor:\nThe “Wirnet™ iStation” is the ideal gateway to support your smart\ncity, smart industry or any other smart project, combining simplicity of\ninstallation, unique superior coverage and operational excellence.\n\nCloudGate Mini:\nCloudGate mini provides remote access over a secure VPN tunnel to the Ethernet device(s) connected to its LAN Ethernet ports. CloudGate 4.0 next generation CloudGate 4.0 IoT gateways were designed with CloudGate’s signature features; including ruggedized design housing, industrial grade temperature ranges, timed wake-up and ignition sensing, sim connection, passive and active GPS antenna support and all are LuvitRED enabled."
+    ],
+    [],
+    [],
+    [],
+    [],
+    [
+      "",
+      "Specifcations"
+    ],
+    [
+      "",
+      "Copy from Brochure"
+    ],
+    [],
+    [],
+    [
+      "",
+      "Dimensions"
+    ],
+    [
+      "",
+      "Copy from Brochure"
+    ],
+    [],
+    [
+      "",
+      "Order code "
+    ],
+    [
+      "",
+      "Copy from Brochure"
+    ],
+    [],
+    [
+      "",
+      "Download"
+    ],
+    [
+      "",
+      "Create download link"
+    ]
+  ]
+}

@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+:root {
+  font-family: "Oxygen", sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  /* ===========================
+     TYPOGRAPHY SYSTEM
+  =========================== */
+  /* Headings */
+  --font-h1: 50px;
+  /* Main section titles */
+  --font-h2: 38px;
+  /* Sub-section / hero secondary */
+  --font-h3: 24px;
+  /* Card titles */
+  --font-h4: 20px;
+  /* Small headings */
+
+  /* Body Text */
+  --font-body-lg: 20px;
+  /* Large body / emphasis */
+  --font-body: 18px;
+  /* Standard body text */
+  --font-body-sm: 16px;
+  /* Small body / meta */
+  --font-caption: 14px;
+  /* Captions / breadcrumbs */
+
+  /* Hero (responsive) */
+  --font-big: clamp(2.25rem, 5vw + 1rem, 3.5rem);
+
+  /* Legacy support (will be phased out) */
+  --font-medium: 1.5rem;
+  /* 24px - use --font-h3 instead */
+  --font-small: 1.25rem;
+  /* 20px - use --font-h4 instead */
+
+  /* ===========================
+     LINE HEIGHTS
+  =========================== */
+  --lh-tight: 1.2;
+  /* Headings, titles */
+  --lh-normal: 1.6;
+  /* Body text, default */
+  --lh-loose: 1.75;
+  /* Paragraph-heavy content */
+
+  /* ===========================
+     SPACING SYSTEM
+  =========================== */
+  /* Section Spacing */
+  --spacing-section: 80px;
+  --spacing-section-mobile: 40px;
+
+  /* Container Padding */
+  --spacing-container: 40px;
+  --spacing-container-mobile: 20px;
+
+  /* Component Spacing */
+  --spacing-card: 24px;
+  --spacing-gap: 30px;
+
+  /* ===========================
+     COLOR SYSTEM
+  =========================== */
+  /* Primary Colors */
+  --color-primary: #26AAE3;
+  --color-accent: #E6782D;
+
+  /* Text Colors */
+  --color-text-dark: #111;
+  --color-text-body: #333;
+  --color-text-muted: #666;
+
+  /* Background */
+  --color-bg: #ffffff;
+  --color-bg-light: #f9f9f9;
+
+  color-scheme: light;
+  color: var(--color-text-dark);
+  background-color: var(--color-bg);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Global resets for consistency */
+h1 {
+  font-size: var(--font-big);
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+}
+
+h2 {
+  font-size: var(--font-medium);
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 0;
+}
+
+h3 {
+  font-size: var(--font-small);
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 0;
+}
+
+p,
+li,
+span,
+a,
+div {
+  font-family: "Oxygen", sans-serif;
+}
+
+p {
+  font-size: var(--font-body);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+  /* STRICTLY prevent horizontal scroll */
+  width: 100%;
+}
+
+html {
+  overflow-x: hidden;
+  width: 100%;
+  font-size: 18px;
+  /* Base setting as requested */
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* =============================
+   MOBILE OPTIMIZATIONS
+============================= */
+
+/* Ensure touch-friendly interactions on mobile */
+@media (max-width: 768px) {
+
+  /* Minimum touch target size */
+  button,
+  a,
+  input,
+  select,
+  textarea {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Better text readability on mobile */
+  body {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  /* Improve tap highlight */
+  * {
+    -webkit-tap-highlight-color: rgba(38, 170, 227, 0.2);
+  }
+
+  /* Better spacing for mobile */
+  h1 {
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    margin-bottom: 0.875rem;
+  }
+
+  h3 {
+    margin-bottom: 0.75rem;
+  }
+
+  p {
+    margin-bottom: 0.875rem;
+  }
+}

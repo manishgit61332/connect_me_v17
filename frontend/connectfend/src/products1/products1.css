@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+.products-section {
+  text-align: center;
+  padding: var(--spacing-section) 0;
+  font-family: "Oxygen", sans-serif;
+}
+
+.products-title {
+  font-size: var(--font-h1);
+  font-weight: 700;
+  line-height: var(--lh-tight);
+  color: var(--color-primary);
+  margin-bottom: 50px;
+}
+
+/* ------------------------------------------------------ */
+/* ------------------  MARQUEE SETUP  ------------------- */
+/* ------------------------------------------------------ */
+
+.marquee {
+  overflow: hidden;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.marquee-track {
+  display: flex;
+  gap: var(--spacing-gap);
+  width: max-content;
+}
+
+/* Pause on hover for premium UX */
+/* Pause on hover for premium UX */
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+.animate-scroll-left {
+  animation: scroll-left 200s linear infinite;
+  will-change: transform;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    /* We have 4 sets. Moving -50% moves past 2 sets. Seamless. */
+    transform: translateX(-50%);
+  }
+}
+
+/* ------------------------------------------------------ */
+/* -------------------- PRODUCT CARD -------------------- */
+/* ------------------------------------------------------ */
+
+/* ------------------------------------------------------ */
+/* -------------------- PRODUCT CARD -------------------- */
+/* ------------------------------------------------------ */
+
+.product-card {
+  width: 300px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  border: 1px solid #eee;
+  flex-shrink: 0;
+  /* Prevent shrinking in flex container */
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+/* IMAGE WRAPPER */
+.product-image-wrapper {
+  width: 100%;
+  height: 240px;
+  /* Fixed height for marquee consistency */
+  background: #f9f9f9;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  background: transparent;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.05);
+}
+
+/* DETAILS SECTION */
+.product-details {
+  padding: var(--spacing-card);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.product-subtitle {
+  font-size: var(--font-caption);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-text-muted);
+  margin: 0 0 6px 0;
+  font-weight: 700;
+}
+
+.product-title {
+  font-size: var(--font-h4);
+  font-weight: 700;
+  color: var(--color-text-body);
+  margin: 0 0 12px 0;
+  line-height: var(--lh-tight);
+}
+
+.view-more-link {
+  margin-top: auto;
+  font-size: var(--font-body-sm);
+  font-weight: 700;
+  color: var(--color-primary);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.view-more-link:hover {
+  color: #0077b6;
+}
+
+/* REMOVE OLD OVERLAY STYLES */
+.product-overlay,
+.overlay-top,
+.overlay-bottom {
+  display: none;
+}
+
+/* Grid Layout for Mobile Products */
+@media (max-width: 768px) {
+  .marquee-track {
+    /* If there's a marquee on products page, disable it on mobile or make it scrollable */
+    /* Assuming this class targets the track inside products section too */
+    animation: none !important;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 Column Grid */
+    gap: 15px;
+    width: 100%;
+    overflow: visible;
+    /* Let grid overflow flow down */
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .marquee {
+    overflow: visible;
+    /* Allow vertical scroll */
+    height: auto;
+  }
+
+  /* Compact Product Card for Grid */
+  .product-card {
+    width: 100% !important;
+    /* Fill grid cell */
+    max-width: unset;
+    height: auto;
+    aspect-ratio: 0.7;
+    /* Maintain consistent ratio */
+    margin: 0;
+    min-width: unset;
+  }
+
+  .product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Overlay adjustments for small touch targets */
+  .product-overlay {
+    height: 40%;
+    /* Show more info by default or on interaction */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+  }
+
+  .overlay-top h2 {
+    font-size: 16px;
+    /* Smaller title */
+  }
+
+  .overlay-top p {
+    font-size: 12px;
+  }
+
+  .overlay-bottom button {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+}

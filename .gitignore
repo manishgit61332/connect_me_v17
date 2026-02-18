@@ -1,0 +1,66 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Testing
+coverage/
+
+# Production
+build/
+dist/
+
+# Misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Diagnostic/Migration Scripts (Agent tools)
+audit.js
+check-col-f.js
+check-master.js
+debug-names.js
+debug-sheet.js
+final-integrity-check.js
+full-audit.js
+host-in-sheets.js
+inspect-features.js
+inspect-missing.js
+inspect-tab-1.js
+inspect-tab-7.js
+list-all-cats.js
+migrate-products-direct.js
+migrate-products.js
+migrate-simple.js
+migrate-v2.js
+search-mechanical.js
+spot-check.js
+integrity_report.json
+mapping-table.json
+migration-report.json
+migration_audit.json
+audit_report.txt
+*.backup
+inspect-missing.js
+check-master.js
+final-integrity-check.js
+full-audit.js
+spot-check.js
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.cursor/
+
+# Secrets
+google_credentials.json
+fetched_sheet_data.json
+read_sheet.js

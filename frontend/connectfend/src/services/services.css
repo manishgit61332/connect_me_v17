@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+
+.services-section {
+  width: 100%;
+  padding: var(--spacing-section) 0;
+  font-family: var(--font-main);
+  text-align: center;
+}
+
+.services-title {
+  font-size: var(--font-h1);
+  color: var(--color-primary);
+  margin-bottom: 40px;
+}
+
+/* GRID */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* Forced 2 columns for balance */
+  gap: 40px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* CARD */
+.service-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  padding-bottom: 25px;
+  /* height: 546px; Let height be fluid */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  /* width: 648px;  Fixed width was the culprit */
+  width: 100%;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+/* IMAGE */
+.service-image {
+  width: 100%;
+  height: 256px;
+  object-fit: cover;
+}
+
+/* TEXT */
+.service-text {
+  text-align: left;
+  padding: 25px;
+  font-size: var(--font-body);
+  line-height: var(--lh-base);
+  color: var(--color-text-body);
+  flex-grow: 1;
+  /* Pushes button down */
+}
+
+/* BUTTON */
+.service-btn {
+  margin: 0 25px 10px 25px;
+  /* Align with text padding */
+  background: var(--color-primary);
+  color: var(--color-bg-white);
+  border: none;
+  padding: 12px 28px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: var(--font-body-sm);
+  font-weight: 600;
+  display: inline-block;
+  align-self: flex-start;
+  transition: var(--transition-base);
+}
+
+.service-btn:hover {
+  background: var(--color-secondary);
+  color: var(--color-bg-white);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+  .services-section {
+    padding: 40px 20px 60px;
+  }
+
+  .services-title {
+    font-size: var(--font-h2);
+    /* Mobile title */
+    margin-bottom: 30px;
+  }
+
+  .services-grid {
+    width: 100%;
+    gap: 25px;
+    padding: 0 10px;
+  }
+
+  .service-card {
+    border-radius: 10px;
+  }
+
+  .service-image {
+    height: 200px;
+  }
+
+  .service-text {
+    padding: 20px;
+    font-size: var(--font-body-sm);
+    line-height: 1.6;
+  }
+
+  .service-btn {
+    margin: 0 20px 15px 20px;
+    padding: 14px 24px;
+    font-size: var(--font-body-sm);
+    min-height: 48px;
+    width: calc(100% - 40px);
+    /* Full width with margins */
+  }
+}
+
+@media (max-width: 480px) {
+  .services-section {
+    padding: 30px 15px 50px;
+  }
+
+  .services-title {
+    font-size: var(--font-h2);
+  }
+
+  .services-grid {
+    gap: 20px;
+  }
+
+  .service-image {
+    height: 180px;
+  }
+
+  .service-text {
+    padding: 18px;
+    font-size: 15px;
+  }
+}
+
+/* ULTRA-WIDE SCREENS (4K+) */
+@media (min-width: 2500px) {
+  .services-grid {
+    max-width: 2400px;
+    /* Double width for 4K */
+    gap: 80px;
+    grid-template-columns: repeat(2, 1fr);
+    /* Keep 2 cols but they will be wide */
+  }
+
+  .services-title {
+    font-size: 64px;
+    /* Scale up title */
+    margin-bottom: 80px;
+  }
+
+  .service-text {
+    font-size: 24px;
+    /* Scale text */
+    padding: 40px;
+  }
+
+  .service-image {
+    height: 400px;
+  }
+
+  .service-btn {
+    font-size: 20px;
+    padding: 18px 36px;
+    margin: 0 40px 20px 40px;
+  }
+}

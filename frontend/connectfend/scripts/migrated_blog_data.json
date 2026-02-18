@@ -1,0 +1,678 @@
+[
+  {
+    "id": 10,
+    "title": "Home",
+    "link": "https://connectme.biz/2024/07/04/",
+    "date": "2024-01-01",
+    "category": "Industrial IoT",
+    "image": "/assets/blog_10_Home.webp",
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/2024/07/04/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 11,
+    "title": "Home",
+    "link": "https://connectme.biz/2024/08/23/",
+    "date": "2024-01-01",
+    "category": "Industrial IoT",
+    "image": "/assets/blog_11_Home.webp",
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/2024/08/23/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 12,
+    "title": "Home",
+    "link": "https://connectme.biz/2024/09/08/",
+    "date": "2024-01-01",
+    "category": "Industrial IoT",
+    "image": "/assets/blog_12_Home.webp",
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/2024/09/08/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 13,
+    "title": "Home",
+    "link": "https://connectme.biz/2024/09/11/",
+    "date": "2024-01-01",
+    "category": "Industrial IoT",
+    "image": "/assets/blog_13_Home.webp",
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/2024/09/11/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 14,
+    "title": "Home",
+    "link": "https://connectme.biz/2024/10/04/",
+    "date": "2024-01-01",
+    "category": "Industrial IoT",
+    "image": "/assets/blog_14_Home.webp",
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/2024/10/04/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 15,
+    "title": "Home",
+    "link": "https://connectme.biz/2024/10/23/",
+    "date": "2024-01-01",
+    "category": "Industrial IoT",
+    "image": "/assets/blog_15_Home.webp",
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/2024/10/23/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 16,
+    "title": "Home",
+    "link": "https://connectme.biz/2024/11/11/",
+    "date": "2024-01-01",
+    "category": "Industrial IoT",
+    "image": "/assets/blog_16_Home.webp",
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/2024/11/11/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 17,
+    "title": "Home",
+    "link": "https://connectme.biz/2024/11/21/",
+    "date": "2024-01-01",
+    "category": "Industrial IoT",
+    "image": "/assets/blog_17_Home.webp",
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/2024/11/21/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 18,
+    "title": "Home",
+    "link": "https://connectme.biz/2024/12/11/",
+    "date": "2024-01-01",
+    "category": "Industrial IoT",
+    "image": "/assets/blog_18_Home.webp",
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/2024/12/11/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 19,
+    "title": "Home",
+    "link": "https://connectme.biz/2024/12/20/",
+    "date": "2024-01-01",
+    "category": "Industrial IoT",
+    "image": "/assets/blog_19_Home.webp",
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/2024/12/20/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 20,
+    "title": "Home",
+    "link": "https://connectme.biz/2025/01/11/",
+    "date": "2024-01-01",
+    "category": "Industrial IoT",
+    "image": "/assets/blog_20_Home.webp",
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/2025/01/11/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 21,
+    "title": "Home",
+    "link": "https://connectme.biz/2025/01/27/",
+    "date": "2024-01-01",
+    "category": "Industrial IoT",
+    "image": "/assets/blog_21_Home.webp",
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/2025/01/27/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 22,
+    "title": "Home",
+    "link": "https://connectme.biz/2025/02/07/",
+    "date": "2024-01-01",
+    "category": "Industrial IoT",
+    "image": "/assets/blog_22_Home.webp",
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/2025/02/07/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 23,
+    "title": "Home",
+    "link": "https://connectme.biz/2025/02/21/",
+    "date": "2024-01-01",
+    "category": "Industrial IoT",
+    "image": "/assets/blog_23_Home.webp",
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/2025/02/21/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 24,
+    "title": "Home",
+    "link": "https://connectme.biz/2025/03/06/",
+    "date": "2024-01-01",
+    "category": "Industrial IoT",
+    "image": "/assets/blog_24_Home.webp",
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/2025/03/06/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 25,
+    "title": "Home",
+    "link": "https://connectme.biz/2025/03/20/",
+    "date": "2024-01-01",
+    "category": "Industrial IoT",
+    "image": "/assets/blog_25_Home.webp",
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/2025/03/20/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 26,
+    "title": "Automation Solutions Archives",
+    "link": "https://connectme.biz/category/iot-automation-solutions/",
+    "date": "2024-01-01",
+    "category": "Industrial IoT",
+    "image": "/assets/blog_26_Automation_Solutions.png",
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/category/iot-automation-solutions/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 27,
+    "title": "Industrial Automation Archives",
+    "link": "https://connectme.biz/category/iot-in-industrial-automation/",
+    "date": "2024-01-01",
+    "category": "Industrial IoT",
+    "image": "/assets/blog_27_Industrial_Automatio.png",
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/category/iot-in-industrial-automation/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 28,
+    "title": "Exploring LoRaWAN Solutions with Wi-Fi Gateways",
+    "link": "https://connectme.biz/choosing-the-best-lorawan-gateway-for-your-building-signal-coverage/",
+    "date": "2025-03-20",
+    "category": "Industrial IoT",
+    "image": "/assets/blog_28_Exploring_LoRaWAN_So.avif",
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/choosing-the-best-lorawan-gateway-for-your-building-signal-coverage/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 29,
+    "title": "Electromagnetic Flow Meter - TKN2041-DNXXX",
+    "link": "https://connectme.biz/electromagnetic-flow-meter-tkn2041-dnxxx/",
+    "date": "2024-01-01",
+    "category": "Industrial IoT",
+    "image": "/assets/blog_29_Electromagnetic_Flow.jpg",
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/electromagnetic-flow-meter-tkn2041-dnxxx/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 30,
+    "title": "A Game-Changer in Energy Efficiency",
+    "link": "https://connectme.biz/energy-efficiency-is-a-net-zero-game-changer/",
+    "date": "2024-09-08",
+    "category": "Industrial IoT",
+    "image": "/assets/blog_30_A_Game_Changer_in_En.avif",
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/energy-efficiency-is-a-net-zero-game-changer/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 31,
+    "title": "Enhancing Energy Monitoring with Smart Connectivity",
+    "link": "https://connectme.biz/enhancing-energy-monitoring-with-smart-connectivity/",
+    "date": "2024-11-11",
+    "category": "Industrial IoT",
+    "image": "/assets/blog_31_Enhancing_Energy_Mon.avif",
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/enhancing-energy-monitoring-with-smart-connectivity/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 32,
+    "title": "No Title",
+    "link": "https://connectme.biz/feed/",
+    "date": "2024-01-01",
+    "category": "Industrial IoT",
+    "image": "",
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/feed/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 33,
+    "title": "MBus Gas Solenoid Valve Controller &amp; Pulse Reader (TKN2801)",
+    "link": "https://connectme.biz/gas-konnect-mbus-gas-solenoid-valve-controller-pulse-reader/",
+    "date": "2024-01-01",
+    "category": "Industrial IoT",
+    "image": "/assets/blog_33_MBus_Gas_Solenoid_Va.jpg",
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/gas-konnect-mbus-gas-solenoid-valve-controller-pulse-reader/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 34,
+    "title": "How technology is propelling domestic gas distribution network",
+    "link": "https://connectme.biz/importance-of-solenoid-valve-controller-pulse-reader-solution/",
+    "date": "2024-07-04",
+    "category": "Industrial IoT",
+    "image": "/assets/blog_34_How_technology_is_pr.jpg",
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/importance-of-solenoid-valve-controller-pulse-reader-solution/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 35,
+    "title": "Intelligent utility metering in LPG systems",
+    "link": "https://connectme.biz/intelligent-utility-metering-in-lpg-systems/",
+    "date": "2024-10-04",
+    "category": "Industrial IoT",
+    "image": "/assets/blog_35_Intelligent_utility_.avif",
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/intelligent-utility-metering-in-lpg-systems/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 36,
+    "title": "IoT &amp; LoRaWAN",
+    "link": "https://connectme.biz/iot-lorawan/",
+    "date": "2024-01-01",
+    "category": "Industrial IoT",
+    "image": "/assets/blog_36_IoT__amp__LoRaWAN.jpg",
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/iot-lorawan/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 37,
+    "title": "IoT Revolutionizing AMR Metering and Meter Data Management",
+    "link": "https://connectme.biz/iot-revolutionizing-amr-metering-and-meter-data-management/",
+    "date": "2025-01-27",
+    "category": "Industrial IoT",
+    "image": "/assets/blog_37_IoT_Revolutionizing_.avif",
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/iot-revolutionizing-amr-metering-and-meter-data-management/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 38,
+    "title": "Revolutionizing Smart Water Leak Detection and Remote Connectivity",
+    "link": "https://connectme.biz/iot-smart-water-leak-solution/",
+    "date": "2024-10-23",
+    "category": "Industrial IoT",
+    "image": "/assets/blog_38_Revolutionizing_Smar.avif",
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/iot-smart-water-leak-solution/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 39,
+    "title": "LoRaWAN solution leads the digital transformation and sustainability",
+    "link": "https://connectme.biz/lorawan-solution-leads-the-digital-transformation-and-sustainability/",
+    "date": "2024-08-23",
+    "category": "Industrial IoT",
+    "image": "/assets/blog_39_LoRaWAN_solution_lea.avif",
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/lorawan-solution-leads-the-digital-transformation-and-sustainability/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 40,
+    "title": "Our Clients",
+    "link": "https://connectme.biz/our-clients/",
+    "date": "2024-01-01",
+    "category": "Industrial IoT",
+    "image": "/assets/blog_40_Our_Clients.jpg",
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/our-clients/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 41,
+    "title": "Our Products",
+    "link": "https://connectme.biz/our-products/",
+    "date": "2024-01-01",
+    "category": "Industrial IoT",
+    "image": "/assets/blog_41_Our_Products.jpg",
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/our-products/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 42,
+    "title": "Our Services",
+    "link": "https://connectme.biz/our-services/",
+    "date": "2024-01-01",
+    "category": "Industrial IoT",
+    "image": null,
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/our-services/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 43,
+    "title": "Our Solutions",
+    "link": "https://connectme.biz/our-solutions/",
+    "date": "2024-01-01",
+    "category": "Industrial IoT",
+    "image": "/assets/blog_43_Our_Solutions.png",
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/our-solutions/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 44,
+    "title": "Pioneering Energy Solutions with ConnectMe Solutions",
+    "link": "https://connectme.biz/pioneering-energy-solutions-with-connectme-solutions/",
+    "date": "2025-02-07",
+    "category": "Industrial IoT",
+    "image": "/assets/blog_44_Pioneering_Energy_So.avif",
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/pioneering-energy-solutions-with-connectme-solutions/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 45,
+    "title": "Portable Clamp On Flow Meter - TKN2031",
+    "link": "https://connectme.biz/portable-clamp-on-flow-meter-tkn2031/",
+    "date": "2024-01-01",
+    "category": "Industrial IoT",
+    "image": "/assets/blog_45_Portable_Clamp_On_Fl.jpg",
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/portable-clamp-on-flow-meter-tkn2031/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 46,
+    "title": "Privacy Policy",
+    "link": "https://connectme.biz/privacy-policy/",
+    "date": "2024-01-01",
+    "category": "Industrial IoT",
+    "image": "/assets/blog_46_Privacy_Policy.png",
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/privacy-policy/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 47,
+    "title": "Projects",
+    "link": "https://connectme.biz/projects/",
+    "date": "2024-01-01",
+    "category": "Industrial IoT",
+    "image": null,
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/projects/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 48,
+    "title": "Remote Connectivity &amp; VPN",
+    "link": "https://connectme.biz/remote-connectivity-vpn/",
+    "date": "2024-01-01",
+    "category": "Industrial IoT",
+    "image": null,
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/remote-connectivity-vpn/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 49,
+    "title": "Revolutionizing Energy Efficiency: The Power of Energy Monitoring Software",
+    "link": "https://connectme.biz/revolutionizing-energy-efficiency-the-power-of-energy-monitoring-software/",
+    "date": "2025-03-06",
+    "category": "Industrial IoT",
+    "image": "/assets/blog_49_Revolutionizing_Ener.avif",
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/revolutionizing-energy-efficiency-the-power-of-energy-monitoring-software/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 50,
+    "title": "Smart Metering &amp; Utility Billing",
+    "link": "https://connectme.biz/smart-metering-utility-billing/",
+    "date": "2024-01-01",
+    "category": "Industrial IoT",
+    "image": "/assets/blog_50_Smart_Metering__amp_.jpg",
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/smart-metering-utility-billing/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 51,
+    "title": "Smart Water Leak Detection with LoRaWAN Solutions",
+    "link": "https://connectme.biz/smart-water-leak-detection-with-lorawan-solutions/",
+    "date": "2024-12-20",
+    "category": "Industrial IoT",
+    "image": "/assets/blog_51_Smart_Water_Leak_Det.png",
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/smart-water-leak-detection-with-lorawan-solutions/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 52,
+    "title": "Techknave ClampOn BTU / FLOW Meter (TKN202B)",
+    "link": "https://connectme.biz/techknave-clampon-btu-flow-meter-tkn202b/",
+    "date": "2024-01-01",
+    "category": "Industrial IoT",
+    "image": "/assets/blog_52_Techknave_ClampOn_BT.jpg",
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/techknave-clampon-btu-flow-meter-tkn202b/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 53,
+    "title": "Techknave MBus Smart battery-operated shutoff valve (TKN 2101)",
+    "link": "https://connectme.biz/techknave-mbus-smart-battery-operated-shutoff-valve-tkn-2101/",
+    "date": "2024-01-01",
+    "category": "Industrial IoT",
+    "image": "/assets/blog_53_Techknave_MBus_Smart.jpg",
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/techknave-mbus-smart-battery-operated-shutoff-valve-tkn-2101/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 54,
+    "title": "Techknave MBus Smart battery-operated shutoff valve (TKN 2201)",
+    "link": "https://connectme.biz/techknave-mbus-smart-battery-operated-shutoff-valve-tkn-2201/",
+    "date": "2024-01-01",
+    "category": "Industrial IoT",
+    "image": "/assets/blog_54_Techknave_MBus_Smart.jpg",
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/techknave-mbus-smart-battery-operated-shutoff-valve-tkn-2201/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 55,
+    "title": "Tenant Billing Software",
+    "link": "https://connectme.biz/tenant-billing-software-for-building-owners/",
+    "date": "2024-01-01",
+    "category": "Industrial IoT",
+    "image": "/assets/blog_55_Tenant_Billing_Softw.jpg",
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/tenant-billing-software-for-building-owners/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 56,
+    "title": "The Future of Utility Management",
+    "link": "https://connectme.biz/the-future-of-utility-management/",
+    "date": "2024-12-11",
+    "category": "Industrial IoT",
+    "image": "/assets/blog_56_The_Future_of_Utilit.png",
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/the-future-of-utility-management/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 57,
+    "title": "The Growing Importance of Indoor Air Quality Sensors",
+    "link": "https://connectme.biz/the-growing-importance-of-indoor-air-quality-sensors/",
+    "date": "2025-01-11",
+    "category": "Industrial IoT",
+    "image": "/assets/blog_57_The_Growing_Importan.avif",
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/the-growing-importance-of-indoor-air-quality-sensors/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 58,
+    "title": "Transforming Property Management and Utility Billing",
+    "link": "https://connectme.biz/transforming-property-management-and-utility-billing/",
+    "date": "2024-09-11",
+    "category": "Industrial IoT",
+    "image": "/assets/blog_58_Transforming_Propert.avif",
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/transforming-property-management-and-utility-billing/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 59,
+    "title": "Uconnect",
+    "link": "https://connectme.biz/uconnect/",
+    "date": "2024-01-01",
+    "category": "Industrial IoT",
+    "image": "/assets/blog_59_Uconnect.jpg",
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/uconnect/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 60,
+    "title": "Unlocking Efficiency in Industrial Automation with Protocol Converters",
+    "link": "https://connectme.biz/unlocking-efficiency-in-industrial-automation-with-protocol-converters/",
+    "date": "2024-11-21",
+    "category": "Industrial IoT",
+    "image": "/assets/blog_60_Unlocking_Efficiency.avif",
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/unlocking-efficiency-in-industrial-automation-with-protocol-converters/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  },
+  {
+    "id": 61,
+    "title": "Unlocking the Power of MBUS Master",
+    "link": "https://connectme.biz/unlocking-the-power-of-mbus-master/",
+    "date": "2025-02-21",
+    "category": "Industrial IoT",
+    "image": "/assets/blog_61_Unlocking_the_Power_.avif",
+    "content": "<p>Read full article at <a href=\"https://connectme.biz/unlocking-the-power-of-mbus-master/\" target=\"_blank\">ConnectMe Blog</a></p>",
+    "quote": {
+      "text": "Call us for more information.",
+      "author": "ConnectMe Team"
+    }
+  }
+]

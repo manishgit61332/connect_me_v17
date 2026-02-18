@@ -1,0 +1,23 @@
+Project Name:
+Dubai Hills Park – Feeder Pillars IoT Connectivity
+
+Project Location:
+Dubai Hills Master Estate Community
+
+Project Scope:
+
+Supply and installation of IoT-based connectivity solution for feeder pillars serving Dubai Hills Park within the Dubai Hills Master Estate Community.
+
+Provision and installation of 7 (Seven) IoT control panels, each equipped with:
+
+Relay modules for remote ON/OFF control of street lighting feeders.
+
+PMU (Power Monitoring Unit) meters to continuously monitor electrical parameters and feeder load.
+
+Integration of all feeder pillars with a cloud-based monitoring and control platform to enable:
+
+Real-time load monitoring.
+
+Remote control of lighting feeders.
+
+Centralized supervision and operational management from any authorized location.

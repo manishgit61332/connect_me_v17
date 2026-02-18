@@ -1,0 +1,9 @@
+Project Name: Festival Plaza Mall, Dubai
+
+To ensure accurate billing and energy monitoring across retail outlets, advanced clamp-on BTU metering solutions were deployed at Festival Plaza Mall. Due to large pipe sizes (300 mm and 650 mm) and the critical nature of uninterrupted mall operations, replacing the existing faulty inline BTU meters was not feasible.
+
+Our non-intrusive clamp-on BTU meters were installed without any system shutdown or operational disruption and were fully integrated with the Building Management System (BMS). This solution enabled seamless, real-time energy monitoring while maintaining business continuity.
+
+The clamp-on BTU meters delivered accuracy equivalent to traditional inline BTU meters. Independent third-party calibration and certification confirmed that both flow and temperature measurements matched inline meter performance, ensuring reliable billing-grade data.
+
+This project demonstrates a cost-effective, non-invasive metering solution that eliminates downtime while delivering high accuracy and compliance for commercial energy monitoring.

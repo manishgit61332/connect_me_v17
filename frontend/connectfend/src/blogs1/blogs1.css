@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+
+.blogs-section {
+  padding: 20px 0 40px;
+  font-family: "Oxygen", sans-serif;
+}
+
+.blogs-title {
+  font-size: 8px;
+  font-weight: 100;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+/* GRID STRUCTURE - Fixed to use grid properly */
+.blogs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 600px);
+  justify-content: center;
+  gap: 25px;
+}
+
+/* FEATURED BIG CARD - Spans full height on left */
+.featured-card {
+  width: 100%;
+  height: 580px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  grid-row: span 2;
+  /* Makes it take 2 rows */
+}
+
+.featured-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.featured-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+  color: white;
+  text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.6);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+}
+
+.featured-content h2 {
+  font-size: 28px;
+  margin-bottom: 8px;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.featured-content p {
+  color: #fff;
+}
+
+/* SMALL CARD - Fixed height calculation */
+.blog-card {
+  width: 600px;
+  height: 277.5px;
+  /* (580px - 25px gap) / 2 */
+  background: #fff;
+  display: flex;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.blog-img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blog-content2 {
+  width: 50%;
+  padding: 25px 25px 70px 25px;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.blog-title2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 18px;
+  color: #000;
+}
+
+.blog-meta2 {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 100px;
+}
+
+.blog-content1 {
+  width: 50%;
+  padding: 25px 25px 70px 25px;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.blog-title1 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 18px;
+  color: #000;
+}
+
+.blog-meta1 {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 100px;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+
+/* READ MORE BUTTON */
+.blog-readmore {
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+  top: 160px;
+  text-align: right;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.arrow-icon {
+  color: #ff7f2a;
+  font-size: 24px;
+}
+
+.rm-text {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  color: #26AAE3;
+  margin-top: 14px;
+}
+
+/* LOAD MORE BUTTON */
+.loadmore-wrap {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.loadmore-btn {
+  background: #ff8c2a;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.loadmore-btn:hover {
+  background: #ff7a15;
+  transition: background 0.3s ease;
+}
+
+.featured-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.featured-card-link:hover {
+  opacity: 0.95;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1200px) {
+  .blogs-grid {
+    grid-template-columns: 1fr;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .featured-card {
+    height: 450px;
+    grid-row: auto;
+    /* Reset spanning */
+  }
+
+  .blog-card {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 768px) {
+  .blogs-grid {
+    gap: 20px;
+    padding: 0 15px;
+  }
+
+  .featured-card {
+    height: 350px;
+  }
+
+  .featured-content h2 {
+    font-size: 22px;
+  }
+
+  .blog-card {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .blog-img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .blog-content1,
+  .blog-content2 {
+    width: 100%;
+    padding: 20px;
+    height: auto;
+  }
+
+  .blog-title1,
+  .blog-title2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    min-height: auto;
+  }
+
+  .blog-meta1,
+  .blog-meta2 {
+    margin-bottom: 40px;
+    /* Space for button */
+  }
+
+  .blog-readmore {
+    position: static;
+    margin-top: 15px;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .arrow-icon {
+    font-size: 18px;
+  }
+
+  .rm-text {
+    margin-top: 0;
+  }
+}

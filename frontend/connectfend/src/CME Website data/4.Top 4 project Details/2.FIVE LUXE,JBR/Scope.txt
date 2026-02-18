@@ -1,0 +1,24 @@
+Project Name: FIVE LUXE, JBR
+Scope of Work:
+
+Integrated BTU, Hot Water, Cold Water, and Flush Water meters into a centralized IBM AMR software platform.
+
+Enabled automated meter reading (AMR) for all utility meters through a single system.
+
+Solution Delivered:
+
+Implemented seamless data integration from multiple meter types into the IBM software.
+
+Developed customized analytical reports for comprehensive meter data analysis.
+
+Designed and implemented customized billing formats, including all critical billing calculations, as per project requirements.
+
+Business Impact:
+
+Centralized utility meter data management across all services.
+
+Improved billing accuracy and transparency.
+
+Reduced manual effort in data handling and report preparation.
+
+Delivered a scalable AMR solution supporting future expansion.

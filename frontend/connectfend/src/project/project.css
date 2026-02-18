@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+
+/* ===================================================
+   GLOBAL PROJECTS SECTION
+=================================================== */
+
+.projects-section {
+  padding: var(--spacing-section) 0 calc(var(--spacing-section) / 2);
+  /* Increased top padding to clear sticky tabs */
+  font-family: var(--font-main);
+  text-align: center;
+  scroll-margin-top: 70px;
+  /* Smooth scroll offset - adjusted for sticky header ONLY */
+}
+
+/* TABS NAVIGATION */
+.work-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0;
+  background: #fff;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 30px;
+  /* Spacer below tabs */
+}
+
+.work-tab {
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #555;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.work-tab:hover {
+  background: #f0f9ff;
+  color: #26AAE3;
+}
+
+.projects-title {
+  font-size: var(--font-h1);
+  font-weight: 700;
+  color: var(--color-text-main);
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+/* Shared Grid Structure */
+.projects-grid {
+  width: 78%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px 40px;
+}
+
+/* ===================================================
+   ONGOING PROJECTS CARD
+=================================================== */
+
+.project-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+  min-height: 350px;
+  box-shadow: 0 0 5px rgba(23, 23, 23, 0.15);
+}
+
+.project-img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 10px 10px;
+  text-align: left;
+}
+
+.project-line,
+.project-line1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.project-name {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  color: #000;
+}
+
+.project-location {
+  font-size: 14px;
+  color: #777;
+  margin: 0;
+}
+
+.project-desc {
+  font-size: 21px;
+  line-height: 1.3;
+  color: #000;
+}
+
+/* ===================================================
+   OUR PROJECTS (SECOND GRID)
+=================================================== */
+
+.project-title1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+}
+
+.project-location1 {
+  font-size: 12px;
+  color: #999;
+  margin-top: 8px;
+}
+
+.project-desc1 {
+  font-size: 21px;
+  margin-top: 0px;
+  color: #333;
+}
+
+/* FILTER */
+.filter-box {
+  text-align: left;
+  width: 78%;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.filter-select {
+  padding: 6px 15px;
+  border-radius: 5px;
+  border: 1px solid #444;
+  font-size: 14px;
+}
+
+/* ===================================================
+   CLIENTS SECTION
+=================================================== */
+
+.clients-section {
+  font-family: "Oxygen", sans-serif;
+  padding: 60px 0 80px;
+  text-align: center;
+  background: #f8fafc;
+  scroll-margin-top: 70px;
+}
+
+.clients-title {
+  font-size: var(--font-h1);
+  font-weight: 700;
+  color: var(--color-text-main);
+  margin-bottom: 50px;
+}
+
+.clients-subtitle {
+  margin-bottom: 25px;
+  font-size: 14px;
+  color: #64748b;
+}
+
+
+.client-category {
+  margin-bottom: 50px;
+  width: 90%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.category-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a365d;
+  margin-bottom: 25px;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+
+.category-title::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background: #26AAE3;
+  border-radius: 2px;
+}
+
+.client-category .category-title {
+  display: block;
+}
+
+.category-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+  margin-top: 20px;
+}
+
+.client-category-image {
+  width: 80%;
+  max-width: 1000px;
+  height: auto;
+  display: block;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.client-category-image:hover {
+  transform: scale(1.02);
+}
+
+.placeholder-text {
+  font-size: 16px;
+  color: #94a3b8;
+  font-style: italic;
+  padding: 40px 0;
+}
+
+/* ===================================================
+   RESPONSIVE
+=================================================== */
+
+@media (max-width: 1100px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .clients-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .clients-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

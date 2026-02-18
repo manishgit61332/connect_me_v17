@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+.testimonial-section {
+  padding: var(--spacing-section) 0;
+  font-family: "Oxygen", sans-serif;
+  text-align: center;
+}
+
+.testimonial-title {
+  font-size: var(--font-h1);
+  color: var(--color-primary);
+  font-weight: 700;
+  line-height: var(--lh-tight);
+  margin-bottom: 50px;
+}
+
+@media (max-width: 600px) {
+  .testimonial-card {
+    width: 85vw;
+    /* Responsive width */
+    max-width: 300px;
+    height: auto;
+    min-width: unset;
+    /* Remove min-width lock */
+    padding: 24px;
+    flex-shrink: 0;
+    /* Important for marquee */
+  }
+
+  .testimonial-text {
+    font-size: 16px;
+    /* Smaller font */
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+
+  .testimonial-title {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+
+  .marquee-track {
+    gap: 15px;
+    /* Tighter gap */
+    animation: none !important;
+    /* Stop auto-scroll on mobile */
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+    padding-bottom: 20px;
+    /* Space for scrollbar */
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .testimonial-card {
+    scroll-snap-align: center;
+    margin-right: 15px;
+    /* Spacing between cards */
+  }
+}
+
+/* GRID LAYOUT */
+.testimonial-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* CARD */
+.testimonial-card {
+  width: 398px;
+  height: 460px;
+  background: #fff;
+  border-radius: 13px;
+  padding: 30px;
+  text-align: left;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+
+
+.avatar {
+  width: 55px !important;
+  height: 55px !important;
+  border-radius: 50%;
+  flex-shrink: 0;
+  /* prevents shrinking inside flex */
+}
+
+.profile h3 {
+  font-size: 22px;
+  color: #000;
+  font-weight: bold;
+  margin: 0;
+}
+
+.profile p {
+  margin: 0;
+  font-size: 17px;
+  font-weight: lighter;
+  color: #444;
+}
+
+/* DIVIDER LINE */
+.divider {
+  margin: 18px 0;
+  border: none;
+  border-top: 2px solid #dcdcdc;
+}
+
+.bottom-divider {
+  margin-top: 40px;
+}
+
+/* TEXT CONTENT */
+.testimonial-text {
+  font-size: 23px;
+  line-height: 1.4;
+  color: #333;
+  margin-bottom: 35px;
+}
+
+/* BOTTOM PROFILE */
+.profile,
+.bottom-profile {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+/* MARQUEE CONTAINER */
+.testimonial-marquee {
+  width: 100%;
+  overflow: hidden;
+  padding: var(--spacing-card) 0;
+  margin-top: 40px;
+}
+
+/* TRACK THAT MOVES */
+.marquee-track {
+  display: flex;
+  gap: var(--spacing-gap);
+  animation: marqueeScroll 60s linear infinite;
+  /* Consistent speed */
+}
+
+/* Pause on hover */
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+/* ANIMATION */
+@keyframes marqueeScroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* CARD ADJUSTMENTS FOR MARQUEE */
+.testimonial-card {
+  min-width: 380px;
+  /* Important for smooth auto-scroll */
+  height: 440px;
+  background: #fff;
+  border-radius: 16px;
+  padding: var(--spacing-gap);
+  text-align: left;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  border: 1px solid #f0f0f0;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* AVATAR */
+.avatar {
+  width: 55px !important;
+  height: 55px !important;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* PROFILES */
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile h3 {
+  font-size: var(--font-h4);
+  color: var(--color-text-dark);
+  font-weight: 700;
+  margin: 0;
+}
+
+.profile p {
+  margin: 0;
+  font-size: var(--font-body-sm);
+  color: var(--color-text-muted);
+  font-weight: 400;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 20px 0;
+}
+
+.testimonial-text {
+  font-size: var(--font-body);
+  /* Slightly smaller for better read */
+  line-height: var(--lh-normal);
+  color: var(--color-text-body);
+  margin: 0;
+  flex-grow: 1;
+  /* Take up space */
+  display: flex;
+  align-items: center;
+  /* Vertically center the text quote */
+}
+
+.bottom-divider {
+  margin-bottom: 20px;
+}
+
+.bottom-profile .avatar {
+  width: 55px !important;
+  height: 55px !important;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .testimonial-section {
+    padding: 50px 20px;
+  }
+
+  .testimonial-title {
+    font-size: clamp(1.75rem, 6vw, 2.5rem);
+    margin-bottom: 30px;
+  }
+
+  .marquee-track {
+    gap: 15px;
+    animation: none !important;
+    /* Disable auto-scroll on mobile */
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+    padding-bottom: 20px;
+    -webkit-overflow-scrolling: touch;
+    /* Smooth scrolling on iOS */
+    scrollbar-width: thin;
+  }
+
+  .testimonial-card {
+    min-width: 85vw;
+    max-width: 340px;
+    height: auto;
+    min-height: 350px;
+    scroll-snap-align: center;
+    margin-right: 15px;
+    padding: 24px;
+  }
+
+  .testimonial-text {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .profile h3 {
+    font-size: 18px;
+  }
+
+  .profile p {
+    font-size: 14px;
+  }
+
+  .avatar {
+    width: 48px !important;
+    height: 48px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonial-section {
+    padding: 40px 15px;
+  }
+
+  .testimonial-title {
+    font-size: 1.75rem;
+    margin-bottom: 25px;
+  }
+
+  .testimonial-card {
+    min-width: 90vw;
+    max-width: 300px;
+    min-height: 320px;
+    padding: 20px;
+  }
+
+  .testimonial-text {
+    font-size: 15px;
+  }
+}

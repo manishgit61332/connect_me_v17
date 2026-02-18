@@ -1,0 +1,91 @@
+[
+  [],
+  [],
+  [
+    "S.No",
+    "GATEWAY AND CONNECTIVITY",
+    "Folder name",
+    "Product no",
+    "Product brief"
+  ],
+  [
+    "55",
+    "3. Gateways",
+    "TosiLock-Industrial Gateway",
+    "",
+    "TOSIBOX® Locks is an industrial router with firewall and secure Plug & Go™ connectivity. It serves as an endpoint for secure remote connections. \n"
+  ],
+  [],
+  [
+    "",
+    "Basic Featuers"
+  ],
+  [
+    "",
+    "Tosibox 175:\nPorts :\n• 1 x RJ-45 WAN connection, 10/100 Mb/s, auto-negotiation (MDI / MDI-X)\n• 1 x RJ-45 LAN connection, 10/100 Mb/s, auto-negotiation(MDI / MDI-X)\n• LAN can be assigned as Service connection, 10/100 Mb/s, auto-negotiation (MDI / MDI-X)\n• RS485 port is not supported in the software.\nConnections :\n• 9-35V DC\n• 2 x WiFi antenna connector, RP-SMA Male\n• 1 x LTE antenna connector, SMA Female\n• DIN rail attachment (back)\n• Maximum power consumption 10W\n\nTosibox 350 :\nPorts :\n• 1 x RJ-45 WAN connection, 10/100 Mbps, auto-negotiation (MDI / MDI-X)\n• 4 x RJ-45 LAN connection, 10/100 Mbps, auto-negotiation (MDI / MDI-X)\n• 1 x USB 2.0, type A\nConnections :\n• 2 pin industrial DC power socket\n• 6-Pin 3.5mm Digital IO socket (6-Pin serial interface not supported in software)\n• 5-35V DC, reverse polarity protection, voltage surge/transient protection\n• 1 x RP-SMA for WiFi\n• DIN rail mounting in the back\n• Maximum power consumption 10W",
+    "Tosibox 610 :\nPorts\n• 1 x RJ-45 WAN connection, 10/100/1000 Mb/s, autonegotiation (MDI / MDI-X)\n• 3 x RJ-45 LAN connection, 10/100/1000 Mb/s, autonegotiation (MDI / MDI-X)\n• 1 x USB 2.0, type A\nConnections\n• 4 pin industrial DC power socket\n• 9-50V DC, reverse polarity protection, voltage surge/\ntransient protection\n• DIN rail mounting slot in the back\n• Maximum power consumption 6W\nTosibox 675 : \nPorts\n• 1 x RJ-45 WAN connection, 10/100/1000 Mb/s, autonegotiation (MDI / MDI-X)\n• 3 x RJ-45 LAN connection, 10/100/1000 Mb/s, autonegotiation (MDI / MDI-X)\n• 1 x USB 2.0, type A\nConnections\n• 4 pin industrial DC power socket\n• 9-50V DC, reverse polarity protection,\nvoltage surge/transient protection\n• 2 x RP-SMA for WiFi\n• 2 x SMA for LTE\n• 1 x GNSS\n• DIN rail mounting slot in the back and on both sides\n• Maximum power consumption 16W",
+    "",
+    "",
+    "",
+    "All tosibox products\nTBL 175\nTBL 350\nTBL 375\nTBL 670\nTBL 675\nTBK 2\n4G MODEM:TB4GM8EU REV B"
+  ],
+  [
+    "",
+    "Tosibox 375 :\nPorts :\n• 1 x RJ-45 WAN connection, 10/100 Mbps, auto-negotiation (MDI / MDI-X)\n• 4 x RJ-45 LAN connection, 10/100 Mbps, auto-negotiation (MDI / MDI-X)\n• 1 x USB 2.0, type A\nConnections :\n• 2-pin industrial DC power socket\n• 6-pin 3.5mm digital IO socket (6-pin serial interface not supported in software)\n• 5-35V DC, reverse polarity protection, voltage surge/transient protection\n• 1 x RP-SMA for WiFi\n• 2 x SMA for LTE\n• DIN rail mounting in the back\n• Maximum power consumption 10W\nTosibox Lock 500 :\nPorts\n• 1 x USB 2.0, type A\n• 1 x RJ-45 WAN connection, 10/100 Mb/s, auto-negotiation (MDI / MDI-X)\n• 3 x RJ-45 LAN connection, 10/100 Mb/s, auto-negotiation (MDI / MDI-X)\n• LAN3 can be assigned as Service connection, 10/100 Mb/s, auto-negotiation (MDI / MDI-X)\nConnections\n• 12-48V DC (+/-20%), reverse polarity protected\n• Device frame connector\n• 2 x WiFi antenna connector, RP-SMA Female\n• (TBL5i*) 2 x LTE antenna connectors, SMA Female\n• 2 x Digital Input, 2 x Digital Output, 24V DC out\n• DIN rail attachment (back)\n• Maximum power consumption 10W",
+    "Tosibox 695:\nPorts\n• 1 x RJ-45 WAN connection, 10/100/1000 Mb/s, autonegotiation (MDI / MDI-X)\n• 4 x RJ-45 LAN connection, 10/100/1000 Mb/s, autonegotiation (MDI / MDI-X)\n• 1 x USB 2.0, type A\nConnections\n• 4 pin industrial DC power socket\n• 9-50V DC, reverse polarity protection,\nvoltage surge/transient protection\n• 2 x RP-SMA for WiFi\n• 4 x SMA for 5G/LTE\n• 1 x GNSS\n• DIN rail mounting slot in the back and on both sides\n• Maximum power consumption 18W\nTosibox key :\nConnections are established through a secure,\nencrypted VPN tunnel over the Internet or other\ncommon WANs and LANs, and permissions can\nbe easily granted, revoked and configured in an\nunlimited number of ways. TOSIBOX® Key comes\nwith a durable light metal alloy casing.\nTosiboc Hub :\n• Enhanced cybersecurity through network segmentation\n• Centralized user and access management\n• Continuous 24/7 data collection and management\n• Audit trail and network monitoring\n• Data routing according to regulations and requirements"
+  ],
+  [],
+  [],
+  [
+    "",
+    "Overview"
+  ],
+  [
+    "",
+    " Tosibox has automated secure connectivity and made it simple. It is a standardized way of building VPN connections based on a patented connection method. The configuration-free Plug\n& Go™ implementation is easy and ready to use within minutes. The unique feature of TOSIBOX® technology is the two-way connectivity that brings the benefits of IP networking plus remote maintenance with one technology. Tosibox is ISO27001 certified, underlining the importance we place on protecting customers´ data. Platform security is based on automated firewall settings and point-to-point VPN technology with 256 Bit AES data encryption. Tosibox Platform supports Layer 2 and layer 3 routing functions and protocols.\n\nTosibox 175:\nTOSIBOX® 175 is a cost-effective Plug & GoTM connectivity device and is ideal for demanding industry sectors that require an all-in-one solution that is compact, able to handle all environments and suited to global market usage. The 4G module and external 4G antenna provides stable Internet access, so the node can be easily configured anywhere\nTosibox 350:\nthe TOSIBOX® 350: Tailored for businesses seeking a compact, all-encompassing solution that operates seamlessly across the globe. With its fixed ethernet interface and WiFi you can enjoy stable remote access wherever you are. No technical expertise is needed – just plug and play\nTosibox 375:\n TOSIBOX® 375 - Your workhorse for any industry. If you are in a business that needs a compact, allin-one solution that can work nearly anywhere in the world, TOSIBOX® 375 is for you! With its fixed ethernet interface, WiFi, or internal LTE module complemented with external antennas, you can enjoy stable remote access wherever you are.",
+    "Tosibox key :\nTOSIBOX® Key is an intelligent cryptoprocessing device that enables a secure connection between your computer and one or more TOSIBOX® Node, giving you a full visibility and control over the network devices connected to the Node. \nTosibox soft key:\nTOSIBOX® SoftKey is a computer software that enables a secure connection between your computer and one or more TOSIBOX® Nodes, giving you full visibility and control over the network devices connected to the Node. The SoftKey works without a physical TOSIBOX® Key device. The SoftKey corresponds a Sub Key that is controlled via a physical Master Key, and therefore it cannot be used to create more keys or Mobile Clients. The access rights are granted and controlled from the physical TOSIBOX® Key, after which the SoftKey remains bound to it. The access rights are device-specific and non-transferrable.\nTosibox Hub :\nTosibox HUB—your gateway to building scalable, secure, and centrally managed VPN networks with unparalleled flexibility and performance. Cut access management work time from days into minutes!\nTosibox HUB is the cornerstone of constructing professional and secure networks comprising a large number of sites and users. It is the VPN tunnel concentrator maintaining\npersistent connections to Tosibox Nodes while enforcing fine grained access controls."
+  ],
+  [
+    "",
+    "Tosibox Lock 500:\nTOSIBOX® Lock 500 is a high-end connectivity device bringing unprecedented possibilities for customers to manage their operations and to build new IoT solutions. The Lock 500 is ideal for demanding industrial environments and opens up new opportunities in security and office networking sectors.\nThe Lock 500 is compatible with all existing TOSIBOX® products. \nTosibox 610:\nTOSIBOX® 610 is a perfect choice for professional applications when wireless networking is not required. Leading edge cybersecurity technology from TOSIBOX enable diverse application scenarios. The durable aluminium alloy shell and small form factor is ideal for rugged mounting conditions.\nTosibox 675: \nTOSIBOX® 675 is a powerful device for high demanding application in demanding industrial environments. With a wide range of connectivity interfaces the demand for always on connectivity is guaranteed. This device can be used in power-hungry industrial applications where speed and robustness are at the heart of the solution. \nTosibox 695:\nUnleash the power of 5G cellular connectivity and LTE fallback with the TOSIBOX® 695 - a game-changer for networking professionals! Crafted with precision and engineered for\ntoughness, the TOSIBOX® 695 boasts a robust metal alloy casing complemented by an extensive temperature range and an IP30 Ingress Protection Rating. It's built to thrive in\nchallenging environmental conditions."
+  ],
+  [],
+  [],
+  [],
+  [
+    "",
+    "Specifcations"
+  ],
+  [
+    "",
+    "Copy from Brochure"
+  ],
+  [],
+  [],
+  [
+    "",
+    "Dimensions"
+  ],
+  [
+    "",
+    "Copy from Brochure"
+  ],
+  [],
+  [
+    "",
+    "Order code "
+  ],
+  [
+    "",
+    "Copy from Brochure"
+  ],
+  [],
+  [
+    "",
+    "Download"
+  ],
+  [
+    "",
+    "Create download link"
+  ]
+]

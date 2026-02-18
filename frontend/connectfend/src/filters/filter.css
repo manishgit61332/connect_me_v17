@@ -1,0 +1,53 @@
+.filter-menu {
+  position: absolute;
+  top: 50px;
+  left: 42px;
+  width: 280px;
+  background: white;
+  border: 2px solid #000;
+  border-radius: 8px;
+  padding: 20px;
+  z-index: 20;
+
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.filter-item {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  gap: 10px;
+  color: #000;
+}
+
+.filter-item input {
+  width: 22px;
+  height: 22px;
+}
+
+.apply-filter-btn {
+  margin-top: 10px;
+  background: #26AAE3;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: black;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.apply-filter-btn:hover {
+  background: orange;
+  color: #fff;
+}
+
+.input-checkbox:checked + .filter-label {
+  font-weight: 700;
+}
+.input-checkbox {
+  cursor: pointer;
+  background-color: #fff;
+}

@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+
+.license-section {
+  width: 100%;
+  padding: var(--spacing-section) 0;
+  text-align: center;
+  font-family: "Oxygen", sans-serif;
+}
+
+.license-title {
+  font-size: var(--font-h1);
+  color: var(--color-primary);
+  font-weight: 700;
+  line-height: var(--lh-tight);
+  margin-bottom: 50px;
+}
+
+/* GRID */
+.license-grid {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(20px, 4vw, 60px);
+  padding: 0 clamp(10px, 2vw, 20px);
+}
+
+/* CARD */
+.license-card {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: var(--spacing-card);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.license-card img {
+  width: 100%;
+  height: auto;
+  max-height: 30vh;
+  object-fit: contain;
+}
+
+.cert-label {
+  font-size: var(--font-body-sm);
+  font-weight: 600;
+  color: var(--color-text-body);
+  margin: 0;
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .license-grid {
+    gap: clamp(15px, 3vw, 40px);
+  }
+}
+
+@media (max-width: 768px) {
+  .license-section {
+    padding: clamp(30px, 5vw, 40px) 20px 60px;
+  }
+
+  .license-title {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    margin-bottom: clamp(20px, 4vw, 35px);
+  }
+
+  .license-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: clamp(20px, 4vw, 40px);
+    width: 95%;
+  }
+
+  .license-card {
+    height: auto;
+    width: 100%;
+    max-width: none;
+    aspect-ratio: auto;
+    padding: clamp(10px, 2vw, 16px);
+  }
+
+  .cert-label {
+    font-size: clamp(12px, 2.5vw, 14px);
+  }
+}
+
+@media (max-width: 480px) {
+  .license-section {
+    padding: 30px 15px 50px;
+  }
+
+  .license-title {
+    font-size: 1.875rem;
+    margin-bottom: 30px;
+  }
+
+  .license-grid {
+    grid-template-columns: 1fr;
+    gap: clamp(15px, 4vw, 30px);
+    width: 90%;
+  }
+
+  .license-card {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 18px;
+  }
+
+  .cert-label {
+    font-size: 15px;
+  }
+}

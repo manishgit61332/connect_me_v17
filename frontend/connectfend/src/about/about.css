@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+.about-wrapper {
+  font-family: "Oxygen", sans-serif;
+  color: var(--color-text-dark);
+}
+
+/* ===========================
+   HERO
+   =========================== */
+.about-hero {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.about-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+.about-hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  color: #fff;
+  text-shadow: 0px 3px 10px rgba(0, 0, 0, 0.9);
+}
+
+.about-hero-overlay h1 {
+  font-size: var(--font-big);
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.about-hero-overlay p {
+  font-size: var(--font-body-lg);
+  color: #fff;
+}
+
+
+.about-section {
+  font-family: "Oxygen", sans-serif;
+  padding: var(--spacing-section-mobile) var(--spacing-section);
+  /* More side padding for breathing room */
+  color: var(--color-text-dark);
+}
+
+/* --- TOP TWO COLUMN LAYOUT --- */
+.about-top {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  /* Give text slightly more space */
+  gap: 60px;
+  align-items: center;
+  /* Center align image and text vertically */
+}
+
+/* LEFT IMAGE */
+.about-image-box {
+  width: 100%;
+  position: relative;
+  /* Context for absolute positioning of footer */
+}
+
+.about-image {
+  width: 100%;
+  height: 480px;
+  /* Slightly reduced height for balance */
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  display: block;
+  /* Removes bottom gap */
+}
+
+.about-image-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-primary);
+  /* Blue color */
+  color: white;
+  padding: 10px;
+  text-align: left;
+  font-weight: 700;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  font-size: var(--font-body);
+  padding-left: 20px;
+  text-transform: uppercase;
+}
+
+/* RIGHT TEXT */
+.about-text p {
+  font-size: var(--font-body);
+  /* Standardized Body Text */
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* FULL-WIDTH PARAGRAPHS BELOW */
+.about-full-text {
+  font-size: var(--font-body);
+  /* Standardized Body Text */
+  line-height: 1.8;
+  margin-top: 40px;
+  /* Better separation */
+  max-width: 100%;
+  color: #333;
+}
+
+/* ========================= */
+/*   THREE-CARD SECTION      */
+/* ========================= */
+
+.about-cards-section {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px;
+  margin-top: 40px;
+}
+
+.about-card {
+  width: 30%;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+.about-card-title {
+  font-size: var(--font-h3);
+  font-weight: 700;
+  color: #009e5c;
+  /* green like screenshot */
+  margin-bottom: 10px;
+}
+
+.about-card-sub {
+  font-size: var(--font-h2);
+  /* Was 30px, bumped to 38px standard, or maybe h3? Let's use h2 as it looks big in design */
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.about-card ul,
+.about-card p {
+  font-size: var(--font-body);
+  line-height: var(--lh-normal);
+  color: var(--color-text-body);
+}
+
+.about-card-small {
+  margin-top: 15px;
+  font-size: var(--font-body-sm) !important;
+  color: #555 !important;
+}
+
+/* =========================== */
+/*      ISO CERTIFICATIONS     */
+/* =========================== */
+
+.iso-section {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 190px;
+  /* spacing exactly like screenshot */
+  padding-bottom: 40px;
+}
+
+.iso-card {
+  text-align: center;
+}
+
+.iso-img {
+  width: 280px;
+  height: auto;
+  object-fit: contain;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: 1px solid #ddd;
+  padding: 5px;
+  background: #fff;
+}
+
+.iso-label {
+  font-size: var(--font-h2);
+  /* Was 36px */
+  font-weight: 600;
+  color: #d96f1a;
+  /* same orange as screenshot */
+  margin-top: 20px;
+}
+
+/* ABOUT THE FOUNDER */
+.founder-section {
+  margin-top: 60px;
+  padding: 20px 40px;
+}
+
+.founder-title {
+  text-align: center;
+  font-size: var(--font-h2);
+  font-weight: 700;
+  line-height: var(--lh-tight);
+  color: var(--color-primary);
+  margin-bottom: 40px;
+}
+
+/* ROWS */
+.founder-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+/* IMAGES */
+.founder-img {
+  width: 500px;
+  height: 420px;
+  /* Increased height */
+  object-fit: cover;
+  object-position: center;
+  /* Focus on face/upper body */
+  border-radius: 8px;
+}
+
+.founder-img-top {
+  object-position: top center !important;
+}
+
+/* INFO BLOCK */
+.founder-info {
+  max-width: 680px;
+}
+
+.founder-name {
+  font-size: var(--font-h3);
+  /* Was 26px */
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.founder-role {
+  font-size: var(--font-body);
+  /* Was 18px */
+  color: #e36f49;
+  margin-bottom: 15px;
+}
+
+.founder-list {
+  font-size: var(--font-body);
+  /* Was 18px */
+  line-height: 1.6;
+  color: #333;
+}
+
+.founder-list li {
+  margin-bottom: 10px;
+}
+
+/* TECHNOLOGY HERO SECTION */
+
+.tech-hero {
+  width: 100%;
+  height: 550px;
+  background-image: url("../assets/ME.png");
+  /* replace with your image */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-top: 40px;
+}
+
+.tech-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  /* dark transparent overlay */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.tech-title {
+  font-size: clamp(3.2rem, 8vw, 5rem);
+  font-weight: 700;
+  color: white;
+  line-height: var(--lh-tight);
+  margin-bottom: 28px;
+  max-width: 900px;
+}
+
+.tech-sub {
+  font-size: var(--font-body-lg);
+  color: #f1f5f9;
+  line-height: 1.4;
+  margin-bottom: 10px;
+  max-width: 800px;
+}
+
+.about-title {
+  font-size: var(--font-h1);
+  color: var(--color-text-main);
+  margin-bottom: 20px;
+}
+
+.about-subtitle {
+  font-size: var(--font-h4);
+  color: var(--color-primary);
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.about-text p {
+  font-size: var(--font-body);
+  color: var(--color-text-body);
+  line-height: var(--lh-base);
+  margin-bottom: 20px;
+}
+
+/* ===========================
+   RESPONSIVE MOBILE STYLES
+   =========================== */
+
+@media (max-width: 1024px) {
+  .about-top {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-cards-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-card {
+    width: 80%;
+    max-width: 500px;
+  }
+
+  .iso-section {
+    gap: 80px;
+  }
+
+  .founder-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .founder-img {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 30px 20px;
+  }
+
+  .about-hero {
+    height: 300px;
+  }
+
+  .about-hero-overlay {
+    /* Reset handled by base flex styles */
+  }
+
+  .about-hero-overlay h1 {
+    font-size: var(--font-h1);
+    /* Mobile header */
+  }
+
+  .about-hero-overlay p {
+    font-size: var(--font-caption);
+  }
+
+  .about-image {
+    height: 350px;
+  }
+
+  .about-text p,
+  .about-full-text {
+    font-size: var(--font-body-sm);
+    line-height: 1.7;
+  }
+
+  .about-cards-section {
+    padding: 20px;
+    gap: 25px;
+  }
+
+  .about-card {
+    width: 100%;
+    padding: 24px;
+  }
+
+  .about-card-title {
+    font-size: var(--font-h3);
+  }
+
+  .about-card-sub {
+    font-size: var(--font-h3);
+    /* Reduce from h2 on mobile */
+  }
+
+  .about-card ul,
+  .about-card p {
+    font-size: var(--font-body-sm);
+  }
+
+  .iso-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .iso-img {
+    width: 220px;
+  }
+
+  .iso-label {
+    font-size: var(--font-h3);
+  }
+
+  .founder-section {
+    padding: 20px;
+  }
+
+  .founder-title {
+    font-size: var(--font-h2);
+    margin-bottom: 30px;
+  }
+
+  .founder-row {
+    gap: 25px;
+    margin-bottom: 40px;
+  }
+
+  .founder-img {
+    height: 320px;
+  }
+
+  .founder-name {
+    font-size: var(--font-h4);
+  }
+
+  .founder-role {
+    font-size: var(--font-body-sm);
+  }
+
+  .founder-list {
+    font-size: var(--font-body-sm);
+  }
+
+  .tech-hero {
+    height: 400px;
+  }
+
+  .tech-title {
+    font-size: clamp(2rem, 10vw, 3rem);
+    margin-bottom: 15px;
+  }
+
+  .tech-sub {
+    font-size: var(--font-body);
+    line-height: 1.4;
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    padding: 20px 15px;
+  }
+
+  .about-hero {
+    height: 250px;
+  }
+
+  .about-hero-overlay {
+    /* Reset handled by base flex styles */
+  }
+
+  .about-hero-overlay h1 {
+    font-size: var(--font-h2);
+  }
+
+  .about-hero-overlay p {
+    font-size: var(--font-caption);
+  }
+
+  .about-image {
+    height: 280px;
+  }
+
+  .about-text p,
+  .about-full-text {
+    font-size: var(--font-body-sm);
+  }
+
+  .about-cards-section {
+    padding: 15px;
+  }
+
+  .about-card {
+    padding: 20px;
+  }
+
+  .about-card-sub {
+    font-size: var(--font-h4);
+  }
+
+  .iso-img {
+    width: 180px;
+  }
+
+  .iso-label {
+    font-size: var(--font-h4);
+  }
+
+  .founder-img {
+    height: 280px;
+  }
+
+  .tech-hero {
+    height: 350px;
+  }
+
+  .tech-title {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+  }
+
+  .tech-sub {
+    font-size: var(--font-body-sm);
+    line-height: 1.3;
+  }
+}

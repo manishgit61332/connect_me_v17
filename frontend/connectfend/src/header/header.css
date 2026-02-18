@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+/* BASIC RESET */
+body {
+  padding-top: 70px;
+  margin: 0;
+  font-family: "Oxygen", sans-serif;
+}
+
+/* =============================
+      FIXED HEADER
+============================= */
+.header {
+  width: 100%;
+  height: 70px;
+  background: var(--color-bg);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 var(--spacing-container);
+  box-sizing: border-box;
+}
+
+/* =============================
+          LOGO
+============================= */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 70px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  transform: scale(1.5);
+  margin-left: 15px;
+}
+
+/* =============================
+        NAVIGATION (Desktop)
+============================= */
+.desktop-nav {
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+.desktop-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.desktop-nav a,
+.nav-link {
+  font-size: var(--font-body);
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--color-primary);
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.desktop-nav a:hover,
+.nav-link:hover,
+.nav-link.active,
+.desktop-nav a.active {
+  color: var(--color-accent);
+}
+
+/* =============================
+        CONTACT BUTTON
+============================= */
+.contact-btn {
+  background: var(--color-primary);
+  color: var(--color-text-main);
+  padding: 10px 25px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: var(--font-h4);
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.contact-btn:hover {
+  background: var(--color-text-main);
+  color: var(--color-primary);
+}
+
+/* =============================
+     MEGA DROPDOWN MENU
+============================= */
+.services-dropdown {
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 620px;
+
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.15);
+  z-index: 2000;
+}
+
+.sd-col {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sd-title {
+  font-size: var(--font-h3);
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: var(--color-text-dark);
+}
+
+.sd-divider {
+  width: 1px;
+  background: #dcdcdc;
+}
+
+.sd-item {
+  font-size: var(--font-body);
+  text-decoration: none;
+  color: var(--color-text-dark);
+  margin-bottom: 10px;
+  transition: 0.2s ease;
+}
+
+.sd-item:hover {
+  color: var(--color-primary);
+}
+
+/* UNIVERSAL DROPDOWN WRAPPER */
+.mega-dropdown {
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 700px;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 12px;
+
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.15);
+  display: flex;
+  gap: 30px;
+  z-index: 2000;
+}
+
+.mega-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.mega-title {
+  font-size: var(--font-h3);
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: var(--color-text-dark);
+}
+
+.mega-sub {
+  font-size: var(--font-body);
+  font-weight: 700;
+  margin-top: 18px;
+  margin-bottom: 6px;
+  color: var(--color-text-dark);
+}
+
+.mega-link {
+  font-size: var(--font-body-sm);
+  margin-bottom: 15px;
+  cursor: pointer;
+  color: var(--color-text-body);
+  text-decoration: none;
+}
+
+.mega-link:hover {
+  text-decoration: none;
+  color: #3eb8ec;
+  /* Corrected 'columns' typo in original css */
+}
+
+.mega-divider {
+  width: 1px;
+  background: #dcdcdc;
+}
+
+.bracket {
+  display: inline;
+  font-size: var(--font-body-sm);
+  font-weight: 400;
+  margin-left: 4px;
+  color: var(--color-primary);
+}
+
+/* =============================
+   MOBILE OVERLAY & HIDDEN ELEMENTS
+============================= */
+.mobile-nav-overlay {
+  display: none;
+  /* Hidden on desktop */
+}
+
+/* Hamburger Icon - Hidden by default on Desktop */
+@media (min-width: 851px) {
+  .mobile-menu-icon {
+    display: none !important;
+  }
+}
+
+.mobile-only {
+  display: none;
+}
+
+.desktop-only {
+  display: block;
+}
+
+
+/* =============================
+        RESPONSIVE (Max-width 850px)
+============================= */
+@media (max-width: 850px) {
+  .header {
+    padding: 0 20px;
+    justify-content: space-between;
+  }
+
+  /* Show Hamburger */
+  .mobile-menu-icon {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    z-index: 2001;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: background 0.2s;
+    cursor: pointer;
+    color: #26AAE3;
+    background: transparent;
+    border: 1px solid rgba(38, 170, 227, 0.2);
+  }
+
+  .mobile-menu-icon svg {
+    fill: #26AAE3;
+    width: 24px;
+    height: 24px;
+  }
+
+  .mobile-menu-icon:active {
+    background: rgba(38, 170, 227, 0.1);
+  }
+
+  /* Hide Desktop Elements */
+  .desktop-nav,
+  .desktop-only {
+    display: none;
+  }
+
+  /* =============================
+     NEW MOBILE DRAWER
+  ============================= */
+  .mobile-nav-overlay {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    /* Full width */
+    height: 100vh;
+    background: #ffffff;
+    z-index: 9999;
+
+    transform: translateX(100%);
+    /* Start hidden off-screen right */
+    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+    /* Smooth ease */
+    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow on left edge */
+  }
+
+  .mobile-nav-overlay.active {
+    transform: translateX(0);
+    /* Slide in */
+  }
+
+  /* --- STICKY HEADER inside Drawer --- */
+  .mobile-menu-header {
+    flex-shrink: 0;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background: #fff;
+    border-bottom: 1px solid #eaeaea;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+  .mobile-menu-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+  }
+
+  .mobile-close-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    font-size: 24px;
+    color: #26AAE3;
+    cursor: pointer;
+  }
+
+  /* --- CONTENT AREA --- */
+  .mobile-menu-content {
+    flex: 1;
+    overflow-y: auto;
+    padding-bottom: 40px;
+    padding-top: 10px;
+    -webkit-overflow-scrolling: touch;
+    /* Smooth scroll iOS */
+  }
+
+  /* --- MAIN ACCORDION ITEMS --- */
+  .mobile-main-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    font-size: var(--font-body);
+    font-weight: 600;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #f0f0f0;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+  }
+
+  .mobile-main-item.link {
+    /* Specific for direct links to ensure full width clickable */
+    display: block;
+  }
+
+  .mobile-main-item:hover,
+  .mobile-main-item:active,
+  .mobile-main-item.active {
+    background-color: #f9fbfc;
+    color: #26AAE3;
+  }
+
+  .mobile-main-item svg {
+    font-size: 14px;
+    color: #999;
+    transition: transform 0.2s;
+  }
+
+  .mobile-main-item.active svg {
+    transform: rotate(180deg);
+    color: #26AAE3;
+  }
+
+  /* --- SUB MENU CONTAINER (Accordion Body) --- */
+  .mobile-sub-menu-container {
+    background-color: #f7f9fa;
+    /* Slightly darker background for hierarchy */
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  /* --- SUB SECTIONS & ITEMS --- */
+  .mobile-section {
+    /* No bottom padding needed if container handles it, 
+       but keeping for safety if reused */
+  }
+
+  .mobile-cat-header {
+    margin: 0;
+    padding: 20px 20px 10px 35px;
+    /* Indented header */
+    font-size: var(--font-body-sm);
+    /* 16px */
+    font-weight: 800;
+    /* Extra bold */
+    color: #111;
+    /* Bold dark color */
+    text-transform: capitalize;
+    letter-spacing: 0px;
+  }
+
+  .mobile-item {
+    display: block;
+    padding: 12px 20px 12px 35px;
+    /* Indented items */
+    font-size: var(--font-body-sm);
+    /* 16px - Standardized from 15px */
+    font-weight: 400;
+    color: #4a5568;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+    min-height: 44px;
+    box-sizing: border-box;
+  }
+
+  .mobile-item:hover,
+  .mobile-item:active {
+    color: #26AAE3;
+    background-color: #edf2f7;
+    margin-left: 10px;
+    /* Subtle shift effect */
+    border-radius: 4px;
+    /* Local hover effect */
+  }
+
+
+  /* --- CONTACT BUTTON (Used as link in list now?) 
+     If the user wants strictly buttons in the list, we styled 'Contact' as a link item above.
+     But let's keep the helper class if we want to add a distinctive button at the bottom too, 
+     though the request implies it's part of the main list. 
+     Currently implemented as a link in the list.
+  --- */
+
+  /* Hide the old contact wrapper if we moved contact to the list */
+  .mobile-contact-wrapper {
+    display: none;
+  }
+}

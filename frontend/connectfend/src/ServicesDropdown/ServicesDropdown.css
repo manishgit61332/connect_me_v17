@@ -1,0 +1,50 @@
+.services-dropdown {
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 620px;
+  height: auto;
+  display: flex;
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+  z-index: 9999;
+}
+
+/* Columns */
+.sd-col {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 15px;
+}
+
+/* Divider */
+.sd-divider {
+  width: 1px;
+  background: #ddd;
+  margin: 0 10px;
+}
+
+/* Title */
+.sd-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #000000;
+}
+
+/* Items */
+.sd-item {
+  font-size: 16px;
+  margin: 8px 0;
+  text-decoration: none;
+  color: #000;
+  transition: color 0.2s;
+}
+
+.sd-item:hover {
+  color: #26AAE3;
+}

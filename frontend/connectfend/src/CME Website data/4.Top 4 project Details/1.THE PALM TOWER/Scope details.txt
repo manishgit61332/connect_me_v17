@@ -1,0 +1,37 @@
+
+Project Name: THE PALM TOWER
+Business Challenge:
+
+Multiple BTU meter brands were operating on independent software platforms.
+
+Each platform generated meter data in different formats, requiring extensive manual consolidation.
+
+Manual Excel-based data processing led to data inconsistencies, missing readings, and billing inaccuracies.
+
+Lack of real-time visibility and absence of offline/fault alerts increased operational risk.
+
+Overall meter data management was inefficient, labor-intensive, and not scalable.
+
+Solution Delivered:
+
+Implemented  centralized IBM Meter Data Management platform integrating five different BTU meter brands.
+
+Standardized meter data collection, processing, and reporting across all brands.
+
+Enabled real-time meter monitoring, including fault and offline status visibility.
+
+Delivered customized billing and consumption reports aligned with Nakheel’s reporting standards.
+
+Automated daily meter data acquisition, eliminating manual intervention.
+
+Business Impact:
+
+Achieved 100% standardized meter data across all BTU meter brands.
+
+Improved billing accuracy and data reliability.
+
+Eliminated manual data handling and reduced operational workload.
+
+Enhanced operational transparency through real-time monitoring.
+
+Delivered a scalable and future-ready solution, resulting in high customer satisfaction from the Nakheel team.

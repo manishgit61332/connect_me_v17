@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+.contact-section {
+  padding: var(--spacing-section) 0;
+  font-family: var(--font-main);
+  text-align: center;
+}
+
+.contact-title {
+  font-size: var(--font-h1);
+  font-weight: 700;
+  line-height: var(--lh-tight);
+  margin-bottom: var(--spacing-gap);
+  color: var(--color-text-main);
+  position: relative;
+  left: 20px;
+}
+
+.contact-form {
+  max-width: 475px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-input,
+.contact-textarea {
+  width: 100%;
+  padding: 15px;
+  /* Reduced padding */
+  border-radius: 8px;
+  border: 1px solid #aaa;
+  background: #eaeaea;
+  font-size: var(--font-body);
+  /* Should be smaller now */
+  font-family: inherit;
+  outline: none;
+}
+
+.two-inputs {
+  display: flex;
+  gap: 20px;
+}
+
+.half {
+  width: 100%;
+}
+
+.contact-textarea {
+  min-height: 150px;
+  resize: none;
+}
+
+.contact-btn1 {
+  margin-top: 10px;
+  background: var(--color-primary);
+  color: var(--color-text-dark);
+  border: none;
+  padding: 12px 0;
+  font-size: var(--font-h3);
+  border-radius: 8px;
+  cursor: pointer;
+  width: 300px;
+  margin-inline: auto;
+  position: relative;
+  left: 5px;
+}
+
+.contact-btn:hover {
+  background: #1c8fc1;
+  transition: 0.2s;
+}
+
+.ci-section {
+  padding: var(--spacing-section-mobile) 0 70px;
+  font-family: "Oxygen", sans-serif;
+}
+
+.ci-title {
+  font-size: var(--font-h1);
+  font-weight: 700;
+  line-height: var(--lh-tight);
+  text-align: left;
+  margin-left: 85px;
+  margin-bottom: 40px;
+  color: var(--color-text-dark);
+}
+
+.ci-grid {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-gap);
+  padding: 0 50px;
+}
+
+.ci-card {
+  display: flex;
+  height: 490px;
+  width: 420px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.ci-bar {
+  width: 22px;
+  background: #26AAE3;
+  border-radius: 10px 0 0 10px;
+}
+
+.ci-content {
+  padding: var(--spacing-gap) 25px;
+}
+
+.ci-icon {
+  font-size: 40px;
+  color: var(--color-primary);
+  margin-bottom: 15px;
+}
+
+.ci-heading {
+  font-size: var(--font-h2);
+  font-weight: 700;
+  line-height: var(--lh-tight);
+  margin-bottom: 20px;
+  color: var(--color-text-dark);
+}
+
+.ci-content p {
+  font-size: var(--font-body-lg);
+  line-height: var(--lh-normal);
+  color: var(--color-text-body);
+  text-align: left;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .ci-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 30px 20px 50px;
+  }
+
+  .contact-title {
+    font-size: clamp(2rem, 8vw, 3rem);
+    left: 0;
+    margin-bottom: 20px;
+  }
+
+  .contact-form {
+    max-width: 100%;
+    padding: 0 10px;
+    gap: 15px;
+  }
+
+  .contact-input,
+  .contact-textarea {
+    padding: 16px;
+    font-size: var(--font-body-sm);
+    /* Prevent zoom on iOS */
+    border-radius: 10px;
+  }
+
+  .two-inputs {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .contact-textarea {
+    min-height: 120px;
+  }
+
+  .contact-btn1 {
+    width: 100%;
+    max-width: 100%;
+    left: 0;
+    font-size: var(--font-body);
+    padding: 16px 0;
+    min-height: 50px;
+  }
+
+  /* Contact Info Section */
+  .ci-section {
+    padding: 30px 20px 50px;
+  }
+
+  .ci-title {
+    font-size: clamp(1.75rem, 7vw, 2.5rem);
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+
+  .ci-grid {
+    padding: 0 20px;
+    gap: 25px;
+  }
+
+  .ci-card {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: 300px;
+  }
+
+  .ci-bar {
+    width: 18px;
+  }
+
+  .ci-content {
+    padding: 25px 20px;
+  }
+
+  .ci-icon {
+    font-size: 32px;
+    margin-bottom: 12px;
+  }
+
+  .ci-heading {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    margin-bottom: 15px;
+  }
+
+  .ci-content p {
+    font-size: var(--font-body-sm);
+    line-height: 1.5;
+  }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+  .contact-title {
+    font-size: 1.875rem;
+  }
+
+  .contact-input,
+  .contact-textarea {
+    padding: 14px;
+  }
+
+  .ci-card {
+    min-height: 250px;
+  }
+
+  .ci-heading {
+    font-size: 1.5rem;
+  }
+}
