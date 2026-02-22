@@ -1,4 +1,3 @@
-import img from "../assets/iot.webp";
 import ufloU60Img from "../assets/uflo_u60_advanced.webp";
 import qatarOfficeImg from "../assets/qatar_new_office.png";
 

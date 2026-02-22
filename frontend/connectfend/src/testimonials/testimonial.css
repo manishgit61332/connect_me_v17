@@ -1,15 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
 
 .testimonial-section {
   padding: var(--spacing-section) 0;
-  font-family: "Oxygen", sans-serif;
+  font-family: var(--font-main);
   text-align: center;
 }
 
 .testimonial-title {
   font-size: var(--font-h1);
   color: var(--color-primary);
-  font-weight: 700;
+  font-weight: var(--fw-title);
   line-height: var(--lh-tight);
   margin-bottom: 50px;
 }
@@ -91,14 +90,14 @@
 .profile h3 {
   font-size: 22px;
   color: #000;
-  font-weight: bold;
+  font-weight: var(--fw-title);
   margin: 0;
 }
 
 .profile p {
   margin: 0;
   font-size: 17px;
-  font-weight: lighter;
+  font-weight: var(--fw-light);
   color: #444;
 }
 
@@ -196,7 +195,7 @@
 .profile h3 {
   font-size: var(--font-h4);
   color: var(--color-text-dark);
-  font-weight: 700;
+  font-weight: var(--fw-title);
   margin: 0;
 }
 
@@ -204,7 +203,7 @@
   margin: 0;
   font-size: var(--font-body-sm);
   color: var(--color-text-muted);
-  font-weight: 400;
+  font-weight: var(--fw-body);
 }
 
 .divider {

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useMemo, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import productData from "../data/productData";
 import "./ListingPage.css";
@@ -21,63 +21,63 @@ const getAllTags = (products) => {
 
 export default function ListingPage() {
     const { category, subcategory } = useParams();
-    const [filteredProducts, setFilteredProducts] = useState([]);
-    const [allRelevantProducts, setAllRelevantProducts] = useState([]);
+    const [filtersByPage, setFiltersByPage] = useState({});
+    const pageKey = `${category || "all"}:${subcategory || "all"}`;
 
-    // Phase 1 Filters
-    const [activeFilters, setActiveFilters] = useState([]);
-    const [availableTags, setAvailableTags] = useState([]);
-
-    // 1. Resolve Data based on URL Params
-    useEffect(() => {
-        let products = [];
-
+    const allRelevantProducts = useMemo(() => {
         if (category) {
             const catData = productData.find(c => c.slug === category);
-            if (catData) {
-                if (subcategory) {
-                    const subData = catData.subcategories.find(s => s.slug === subcategory);
-                    if (subData) products = subData.products;
-                } else {
-                    // Flatten all subcategories if only category is selected
-                    products = catData.subcategories.flatMap(s => s.products);
-                }
+            if (!catData) return [];
+
+            if (subcategory) {
+                const subData = catData.subcategories.find(s => s.slug === subcategory);
+                return subData ? subData.products : [];
             }
-        } else {
-            // Show all if no category (fallback)
-            products = productData.flatMap(c => c.subcategories.flatMap(s => s.products));
+
+            // Flatten all subcategories if only category is selected
+            return catData.subcategories.flatMap(s => s.products);
         }
 
-        setAllRelevantProducts(products);
-        setFilteredProducts(products);
-        setAvailableTags(getAllTags(products));
-        setActiveFilters([]); // Reset filters on nav change
+        // Show all if no category (fallback)
+        return productData.flatMap(c => c.subcategories.flatMap(s => s.products));
     }, [category, subcategory]);
+
+    const availableTags = useMemo(
+        () => getAllTags(allRelevantProducts),
+        [allRelevantProducts]
+    );
+
+    const activeFilters = useMemo(
+        () => filtersByPage[pageKey] || [],
+        [filtersByPage, pageKey]
+    );
+
+    const filteredProducts = useMemo(() => {
+        if (activeFilters.length === 0) {
+            return allRelevantProducts;
+        }
+
+        return allRelevantProducts.filter((p) => {
+            const pTags = p.tags || [];
+            const pProto = p.specs?.protocol ? p.specs.protocol.split(",").map(s => s.trim()) : [];
+            const allPTags = [...pTags, ...pProto];
+            return activeFilters.some(f => allPTags.includes(f));
+        });
+    }, [allRelevantProducts, activeFilters]);
 
     // 2. Apply Sidebar Filters
     const toggleFilter = (tag) => {
-        let newFilters;
-        if (activeFilters.includes(tag)) {
-            newFilters = activeFilters.filter(f => f !== tag);
-        } else {
-            newFilters = [...activeFilters, tag];
-        }
-        setActiveFilters(newFilters);
+        setFiltersByPage((prev) => {
+            const currentFilters = prev[pageKey] || [];
+            const nextFilters = currentFilters.includes(tag)
+                ? currentFilters.filter((f) => f !== tag)
+                : [...currentFilters, tag];
 
-        if (newFilters.length === 0) {
-            setFilteredProducts(allRelevantProducts);
-        } else {
-            const filtered = allRelevantProducts.filter(p => {
-                const pTags = p.tags || [];
-                const pProto = p.specs?.protocol ? p.specs.protocol.split(',').map(s => s.trim()) : [];
-                const allPTags = [...pTags, ...pProto];
-                // OR logic (match any filter) or AND logic? usually AND for specs, OR within category. 
-                // Let's go with: Product must match AT LEAST ONE of the active filters (OR logic) for user friendliness, 
-                // OR match ALL? Badger usually does drilldown. Let's do partial match for now.
-                return newFilters.some(f => allPTags.includes(f));
-            });
-            setFilteredProducts(filtered);
-        }
+            return {
+                ...prev,
+                [pageKey]: nextFilters,
+            };
+        });
     };
 
     const getBreadcrumb = () => {

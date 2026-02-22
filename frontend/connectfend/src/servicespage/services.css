@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
 
 /* MAIN PAGE */
 .services-page {
     width: 88%;
     margin: auto;
     padding-top: 40px;
-    font-family: "Oxygen", sans-serif;
+    font-family: var(--font-main);
 
 }
 
@@ -21,7 +20,7 @@
 .service-title {
     font-size: var(--font-h1);
     /* Was 48px, h1 is 50px */
-    font-weight: 700;
+    font-weight: var(--fw-title);
     color: #E6782D;
     margin-bottom: 25px;
 }
@@ -75,7 +74,7 @@
     font-size: 28px;
     /* Keep distinctive or use h2? 28px is close to 24px(h3) or 38px(h2). Let's use h3 (24px) */
     font-size: var(--font-h3);
-    font-weight: 700;
+    font-weight: var(--fw-title);
     color: #000;
     margin-top: 50px;
     margin-bottom: 20px;
@@ -87,7 +86,7 @@
     font-size: 42px;
     /* Close to h2 (38px) or h1 (50px). Use h1 */
     font-size: var(--font-h1);
-    font-weight: 700;
+    font-weight: var(--fw-title);
     color: #E6782D;
     margin-top: -65px;
 }
@@ -107,7 +106,7 @@
 .rc-title {
     font-size: var(--font-h1);
     /* Was 58px */
-    font-weight: 700;
+    font-weight: var(--fw-title);
     color: #E6782D;
     text-align: center;
     margin-bottom: 40px;
@@ -147,7 +146,7 @@
 .lorawan-title {
     font-size: var(--font-h1);
     /* Was 58px */
-    font-weight: 700;
+    font-weight: var(--fw-title);
     color: #E6782D;
     margin-bottom: 35px;
 }
@@ -174,7 +173,7 @@
 .sensors-title {
     font-size: var(--font-h1);
     /* Was 58px */
-    font-weight: 700;
+    font-weight: var(--fw-title);
     color: #E6782D;
     margin-bottom: 30px;
     text-align: center;
@@ -206,7 +205,7 @@
 .umm-title {
     font-size: var(--font-h1);
     /* Was 58px */
-    font-weight: 700;
+    font-weight: var(--fw-title);
     color: #000;
     margin-bottom: 35px;
 }
@@ -235,7 +234,7 @@
 .billing-title {
     font-size: var(--font-h1);
     /* Was 58px */
-    font-weight: 700;
+    font-weight: var(--fw-title);
     color: #000;
     text-align: center;
     margin-bottom: 35px;
@@ -268,7 +267,7 @@
 .amc-title {
     font-size: var(--font-h1);
     /* Was 58px */
-    font-weight: 700;
+    font-weight: var(--fw-title);
     color: #000;
     margin-bottom: 25px;
 }
@@ -288,7 +287,7 @@
 .tc-title {
     font-size: var(--font-h1);
     /* Was 58px */
-    font-weight: 700;
+    font-weight: var(--fw-title);
     color: #000;
     text-align: right;
     margin-bottom: 30px;
@@ -309,7 +308,7 @@
 .plc-title {
     font-size: var(--font-h1);
     /* Was 58px */
-    font-weight: 700;
+    font-weight: var(--fw-title);
     color: #000;
     margin-bottom: 40px;
 }
@@ -336,7 +335,7 @@
 .dev-title {
     font-size: var(--font-h1);
     /* Was 58px */
-    font-weight: 700;
+    font-weight: var(--fw-title);
     color: #000;
     text-align: right;
     margin-bottom: 40px;
@@ -432,7 +431,7 @@
 .dropdown-header {
     display: flex;
     justify-content: space-between;
-    font-weight: 400;
+    font-weight: var(--fw-body);
 }
 
 /* OPEN CONTENT */
@@ -449,7 +448,7 @@
 ======================================== */
 .order-title {
     font-size: 28px;
-    font-weight: 700;
+    font-weight: var(--fw-title);
     color: #000;
     margin-top: 50px;
     margin-bottom: 20px;
@@ -477,7 +476,7 @@
 
 .service-block h2 {
     font-size: 42px;
-    font-weight: 700;
+    font-weight: var(--fw-title);
     color: #E6782D;
     margin-top: -65px;
 }
@@ -505,7 +504,7 @@
 /* Title centered */
 .rc-title {
     font-size: 58px;
-    font-weight: 700;
+    font-weight: var(--fw-title);
     color: #E6782D;
     text-align: center;
     margin-bottom: 40px;
@@ -585,7 +584,7 @@
 
 .lorawan-title {
     font-size: 58px;
-    font-weight: 700;
+    font-weight: var(--fw-title);
     color: #E6782D;
     margin-bottom: 35px;
 }
@@ -637,7 +636,7 @@
 
 .sensors-title {
     font-size: 58px;
-    font-weight: 700;
+    font-weight: var(--fw-title);
     color: #E6782D;
     margin-bottom: 30px;
     text-align: center;
@@ -731,7 +730,7 @@
 .service-title {
     font-size: 42px;
     /* Slightly refined size, less aggressive */
-    font-weight: 700;
+    font-weight: var(--fw-title);
     color: #1a1a1a;
     margin-bottom: 30px;
     text-align: left;

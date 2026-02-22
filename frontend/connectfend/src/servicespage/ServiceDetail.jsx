@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import serviceData from "../data/serviceData";
 import { FaCheckCircle } from "react-icons/fa";
@@ -7,8 +7,6 @@ import "./serviceDetail.css"; // Specific service styles
 
 export default function ServiceDetail() {
     const { category, serviceId } = useParams();
-    const [service, setService] = useState(null);
-    const [breadcrumbs, setBreadcrumbs] = useState([]);
 
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [dashboardIndex, setDashboardIndex] = useState(0);
@@ -18,25 +16,28 @@ export default function ServiceDetail() {
         setOpenAccordion(openAccordion === index ? null : index);
     };
 
-    useEffect(() => {
-        // Find Service
-        let foundService = null;
-        let foundCat = null;
-
-        if (serviceId) {
-            foundCat = serviceData.find(c => c.slug === category);
-            if (foundCat) {
-                foundService = foundCat.items.find(i => i.id === serviceId);
-            }
+    const { service, breadcrumbs } = useMemo(() => {
+        if (!serviceId) {
+            return { service: null, breadcrumbs: [] };
         }
 
-        if (foundService) {
-            setService(foundService);
-            setBreadcrumbs([
+        const foundCat = serviceData.find((c) => c.slug === category);
+        if (!foundCat) {
+            return { service: null, breadcrumbs: [] };
+        }
+
+        const foundService = foundCat.items.find((item) => item.id === serviceId);
+        if (!foundService) {
+            return { service: null, breadcrumbs: [] };
+        }
+
+        return {
+            service: foundService,
+            breadcrumbs: [
                 { label: foundCat.category, path: "#" },
-                { label: foundService.name, path: "#" }
-            ]);
-        }
+                { label: foundService.name, path: "#" },
+            ],
+        };
     }, [category, serviceId]);
 
     // Dashboard Carousel Logic
@@ -72,6 +73,12 @@ export default function ServiceDetail() {
     }, [service]);
 
     if (!service) return <div className="pd-not-found">Loading or Service Not Found...</div>;
+    const safeDashboardIndex = service.softwareDashboard?.length
+        ? dashboardIndex % service.softwareDashboard.length
+        : 0;
+    const safeImageIndex = service.heroImages?.length
+        ? currentImageIndex % service.heroImages.length
+        : 0;
 
     return (
         <div className="pd-page service-page">
@@ -109,7 +116,7 @@ export default function ServiceDetail() {
                                     key={index}
                                     src={img}
                                     alt={`${service.name} ${index + 1}`}
-                                    className={`carousel-image ${index === currentImageIndex ? "active" : ""}`}
+                                    className={`carousel-image ${index === safeImageIndex ? "active" : ""}`}
                                 />
                             ))}
                         </div>
@@ -181,8 +188,8 @@ export default function ServiceDetail() {
 
                             <div className="dashboard-display">
                                 <img
-                                    src={service.softwareDashboard[dashboardIndex]}
-                                    alt={`Dashboard View ${dashboardIndex + 1}`}
+                                    src={service.softwareDashboard[safeDashboardIndex]}
+                                    alt={`Dashboard View ${safeDashboardIndex + 1}`}
                                     className="dashboard-image"
                                 />
                             </div>
@@ -193,7 +200,7 @@ export default function ServiceDetail() {
                             {service.softwareDashboard.map((_, idx) => (
                                 <span
                                     key={idx}
-                                    className={`dot ${idx === dashboardIndex ? "active" : ""}`}
+                                    className={`dot ${idx === safeDashboardIndex ? "active" : ""}`}
                                     onClick={() => setDashboardIndex(idx)}
                                 ></span>
                             ))}

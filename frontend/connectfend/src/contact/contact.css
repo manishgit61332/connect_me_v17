@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
 
 .contact-section {
   padding: var(--spacing-section) 0;
@@ -8,7 +7,7 @@
 
 .contact-title {
   font-size: var(--font-h1);
-  font-weight: 700;
+  font-weight: var(--fw-title);
   line-height: var(--lh-tight);
   margin-bottom: var(--spacing-gap);
   color: var(--color-text-main);
@@ -74,12 +73,12 @@
 
 .ci-section {
   padding: var(--spacing-section-mobile) 0 70px;
-  font-family: "Oxygen", sans-serif;
+  font-family: var(--font-main);
 }
 
 .ci-title {
   font-size: var(--font-h1);
-  font-weight: 700;
+  font-weight: var(--fw-title);
   line-height: var(--lh-tight);
   text-align: left;
   margin-left: 85px;
@@ -121,7 +120,7 @@
 
 .ci-heading {
   font-size: var(--font-h2);
-  font-weight: 700;
+  font-weight: var(--fw-title);
   line-height: var(--lh-tight);
   margin-bottom: 20px;
   color: var(--color-text-dark);

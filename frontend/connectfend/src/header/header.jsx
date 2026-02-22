@@ -1,7 +1,6 @@
 import "./header.css";
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import Logo from "../assets/logo.webp";
 import headerLogo from "../assets/connectME_logo_transparent.webp";
 import { FaBars, FaTimes, FaChevronDown, FaChevronUp } from "react-icons/fa";
 
@@ -104,27 +103,6 @@ export default function Header() {
       </div>
     );
   }
-
-  const renderMobileServices = () => {
-    const services = serviceData.find(d => d.category === "Services");
-    if (!services) return null;
-
-    return (
-      <div className="mobile-section">
-        {services.items.map((item, i) => (
-          <Link
-            key={i}
-            to={`/services/${services.slug}/${item.id}`}
-            className="mobile-item"
-            onClick={handleMenuClick}
-          >
-            {item.name}
-          </Link>
-        ))}
-      </div>
-    );
-  }
-
 
   return (
     <header className="header">
@@ -292,5 +270,4 @@ export default function Header() {
     </header>
   );
 }
-
 

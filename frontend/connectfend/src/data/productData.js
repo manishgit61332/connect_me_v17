@@ -1,10 +1,7 @@
 // src/data/productData.js
 // Master Data Source for ConnectMe Products
 import logo from "../assets/logo.webp"; // Fallback image
-import ufloU60Img from "../assets/uflo_u60_advanced.webp";
 import gimaBImg from "../assets/products/gima_b_electromagnetic.webp";
-import ufloU50BulkImg from "../assets/products/uflo_u50_bulk.webp";
-import ufloU50CompactImg from "../assets/products/uflo_u50_compact.webp";
 import ufloU40CompactPdf from "../assets/brochures/uflo_u40_compact.pdf";
 import ufloU40BulkPdf from "../assets/brochures/uflo_u40_bulk.pdf";
 import ufloU60Pdf from "../assets/brochures/uflo_u60.pdf";
@@ -19,10 +16,6 @@ import gimaHPdf from "../assets/brochures/gima_h.pdf";
 import gimaIbPdf from "../assets/brochures/gima_ib.pdf";
 import tkn2801Pdf from "../assets/brochures/tkn2801_gas.pdf";
 import tkn2810xPdf from "../assets/brochures/tkn2810x_gas.pdf";
-import mbusMasterPdf from "../assets/brochures/mbus_master.pdf";
-import mbusLevelPdf from "../assets/brochures/mbus_level.pdf";
-import mbusUsbPdf from "../assets/brochures/mbus_usb.pdf";
-import edgeModulePdf from "../assets/brochures/edge_module.pdf";
 import tosilockPdf from "../assets/brochures/tosilock.pdf";
 import smpsPdf from "../assets/brochures/smps_24v.pdf";
 import leakPdf from "../assets/brochures/leak_detection.pdf";
@@ -41,12 +34,10 @@ import cloudgateImg from "../assets/products/Cloudgate mini.webp";
 import wirnetIndoorImg from "../assets/products/Wirnet LoraWan indoor gateway.webp";
 import wirnetOutdoorImg from "../assets/products/wirnet istation lorawan outdoor gateway.webp";
 import tosiboxImg from "../assets/products/Tosibox.webp";
-import lorawanGwImg from "../assets/products/Lorawan gateway.webp";
 
 import u60AdvImg from "../assets/products/u60 advanced series.webp";
 import u70AdvImg from "../assets/products/u70.webp";
 import u50NewImg from "../assets/products/U50_Compact_New.webp";
-import u50CompactImgNew from "../assets/products/u50 compact.webp";
 import u50BulkImgNew from "../assets/products/u50-bulk btu meter.webp";
 import u40BulkImgNew from "../assets/products/uflo_u40_bulk.webp";
 import gimaHImg from "../assets/products/Gima_H_electromagnetic Heat meter.webp";
@@ -78,7 +69,6 @@ import decentlabIamImg from "../assets/products/decentlab_iam.webp";
 // Images (using placeholders where needed, map real imports if available)
 import uconnectPsImg from "../assets/products/uconnect_din_rail_ps.webp";
 import milesightImg from "../assets/products/milesight_am300.webp";
-import uconnectThmImg from "../assets/products/uconnect_u300_thm.webp";
 import uconnectAldImg from "../assets/products/uconnect_ald_s.webp";
 import uconnectZoneLeakImg from "../assets/products/uconnect_zone_leak.webp";
 import uconnectSinglePointLeakImg from "../assets/products/uconnect_single_point_leak.webp";

@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
 
 :root {
-  font-family: "Oxygen", sans-serif;
+  font-family: var(--font-main);
   line-height: 1.6;
-  font-weight: 400;
+  font-weight: var(--fw-body);
 
   /* ===========================
      TYPOGRAPHY SYSTEM
@@ -91,21 +90,21 @@
 /* Global resets for consistency */
 h1 {
   font-size: var(--font-big);
-  font-weight: 700;
+  font-weight: var(--fw-title);
   line-height: 1.2;
   margin: 0;
 }
 
 h2 {
   font-size: var(--font-medium);
-  font-weight: 600;
+  font-weight: var(--fw-subtitle);
   line-height: 1.3;
   margin: 0;
 }
 
 h3 {
   font-size: var(--font-small);
-  font-weight: 600;
+  font-weight: var(--fw-subtitle);
   line-height: 1.4;
   margin: 0;
 }
@@ -115,7 +114,7 @@ li,
 span,
 a,
 div {
-  font-family: "Oxygen", sans-serif;
+  font-family: var(--font-main);
 }
 
 p {
@@ -125,7 +124,7 @@ p {
 }
 
 a {
-  font-weight: 500;
+  font-weight: var(--fw-body-strong);
   color: #646cff;
   text-decoration: inherit;
 }
@@ -162,7 +161,7 @@ button {
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
-  font-weight: 500;
+  font-weight: var(--fw-body-strong);
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;

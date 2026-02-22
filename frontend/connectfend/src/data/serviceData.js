@@ -1,16 +1,5 @@
-import smartImg from "../assets/smart.webp";
-import remote1 from "../assets/remote1.webp";
-import remote2 from "../assets/remote2.webp";
 import iotl from "../assets/iotLowa.webp";
-import items from "../assets/items.webp";
 import left1 from "../assets/left1.webp";
-import right1 from "../assets/right1.webp";
-import utilityImg from "../assets/utility.webp";
-import bill from "../assets/bill.webp";
-import amc from "../assets/amc.webp";
-import consult from "../assets/consultancy.webp";
-import plc from "../assets/plc.webp";
-import dev from "../assets/development.webp";
 import networkSecurityDiagram from "../assets/network_security_diagram.png";
 import utilityBillingDiagram from "../assets/utility_billing_diagram.png";
 import leakDetectionDiagram from "../assets/leak_detection_diagram.png";
@@ -22,7 +11,6 @@ import tosiboxHub from "../assets/Tosibox HUB – Central Access Gateway.png";
 import advancedRemoteMonitoring from "../assets/Advanced Remote Monitoring & Secure Data Communication.jpg";
 import tosiboxControl from "../assets/Tosibox Control – Central Management Platform.jpg";
 
-import wiredLeak from "../assets/Wired Leak Detection System.png";
 import wirelessLeak from "../assets/Wireless Water Leak Dectector.jpg";
 import integratedMonitoring from "../assets/Integrated Monitoring via UCONNECT EDGE Gateway.png";
 import utilityMaintenanceImg from "../assets/Utility Meter Maintenance_service_1.png";
@@ -44,8 +32,6 @@ import img93 from "../utilitybillingmetering/img93.jpg";
 import img94 from "../utilitybillingmetering/img94.jpg";
 
 // Component Images
-import wiredLeakSensor from "../assets/wired_leak_sensor.png";
-import edgeGateway from "../assets/edge_gateway.png";
 import streetLightDash1 from "../assets/intelligent Street Lighting Dashboards photos/intelligent Street Lighting Dashboard_1.png";
 import streetLightDash2 from "../assets/intelligent Street Lighting Dashboards photos/intelligent Street Lighting Dashboards_2.png";
 import streetLightDash3 from "../assets/intelligent Street Lighting Dashboards photos/intelligent Street Lighting Dashboard_3.png";
@@ -80,7 +66,6 @@ const serviceData = [
                     { title: "UBILL IBM", desc: "Integrated Billing Module for multi-utility tariffs (water, electricity, gas, chilled water, hot water), prepaid metering, tenant management, invoice generation, and payment portal." },
                     { title: "UBILL VCM", desc: "Valve Control Management system to remotely operate smart M-Bus/LoRaWAN shutoff valves via cloud dashboard for disconnection/reconnection management." }
                 ],
-                brochure: "../files/Brochure.pdf",
                 offerings: [
                     "UTILITY BILLING – INTEGRATED BILLING MODULE (IBM) - Standalone",
                     "UTILITY BILLING AS MANAGED SERVICE",

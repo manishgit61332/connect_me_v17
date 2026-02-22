@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
 
 /* BASIC RESET */
 body {
   padding-top: 70px;
   margin: 0;
-  font-family: "Oxygen", sans-serif;
+  font-family: var(--font-main);
 }
 
 /* =============================
@@ -64,7 +63,7 @@ body {
 .desktop-nav a,
 .nav-link {
   font-size: var(--font-body);
-  font-weight: 600;
+  font-weight: var(--fw-subtitle);
   text-decoration: none;
   color: var(--color-primary);
   transition: 0.2s ease;
@@ -86,7 +85,7 @@ body {
   border-radius: 10px;
   text-decoration: none;
   font-size: var(--font-h4);
-  font-weight: 500;
+  font-weight: var(--fw-body-strong);
   transition: 0.2s ease;
 }
 
@@ -126,7 +125,7 @@ body {
 
 .sd-title {
   font-size: var(--font-h3);
-  font-weight: 700;
+  font-weight: var(--fw-title);
   margin-bottom: 15px;
   color: var(--color-text-dark);
 }
@@ -174,14 +173,14 @@ body {
 
 .mega-title {
   font-size: var(--font-h3);
-  font-weight: 700;
+  font-weight: var(--fw-title);
   margin-bottom: 15px;
   color: var(--color-text-dark);
 }
 
 .mega-sub {
   font-size: var(--font-body);
-  font-weight: 700;
+  font-weight: var(--fw-title);
   margin-top: 18px;
   margin-bottom: 6px;
   color: var(--color-text-dark);
@@ -209,7 +208,7 @@ body {
 .bracket {
   display: inline;
   font-size: var(--font-body-sm);
-  font-weight: 400;
+  font-weight: var(--fw-body);
   margin-left: 4px;
   color: var(--color-primary);
 }
@@ -324,7 +323,7 @@ body {
 
   .mobile-menu-title {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: var(--fw-title);
     color: #333;
   }
 
@@ -357,7 +356,7 @@ body {
     padding: 16px 20px;
     font-size: 18px;
     /* Larger font for main items */
-    font-weight: 600;
+    font-weight: var(--fw-subtitle);
     color: #333;
     text-decoration: none;
     border-bottom: 1px solid #f0f0f0;
@@ -408,7 +407,7 @@ body {
     padding: 20px 20px 10px 35px;
     /* Indented header */
     font-size: 17px;
-    font-weight: 800;
+    font-weight: var(--fw-title-strong);
     /* Extra bold */
     color: #111;
     /* Bold dark color */
@@ -421,7 +420,7 @@ body {
     padding: 12px 20px 12px 35px;
     /* Indented items */
     font-size: 15px;
-    font-weight: 400;
+    font-weight: var(--fw-body);
     color: #4a5568;
     text-decoration: none;
     transition: background 0.2s, color 0.2s;

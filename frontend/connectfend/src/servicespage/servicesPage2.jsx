@@ -8,7 +8,6 @@ import amc from "../assets/AMC & Training_1.png";
 import consult from "../assets/Technical Consultancy_1.png";
 import plc from "../assets/PLC & SCADA Services_1.png";
 import dev from "../assets/Development & Services_1.png";
-import ubillDiagram from "../assets/ubill_diagram.png";
 
 export default function ServicesPage2() {
 

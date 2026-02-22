@@ -3,7 +3,6 @@ import "./about.css";
 import dubai from "../assets/dubai.webp";
 
 import founder from "../assets/founder.webp";
-import founder2 from "../assets/founder2.webp";
 import prasanna from "../assets/Prasana_headshot.jpg.jpeg";
 import mohamedNasim from "../mohamed_nasim.jpeg";
 import ganesan from "../Ganesan.jpeg";

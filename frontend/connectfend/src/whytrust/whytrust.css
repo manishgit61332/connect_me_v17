@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
 
 .trust-section {
   width: 100%;
@@ -10,7 +9,7 @@
   padding: var(--spacing-section) var(--spacing-container);
 
   box-sizing: border-box;
-  font-family: "Oxygen", sans-serif;
+  font-family: var(--font-main);
 }
 
 /* LEFT SIDE */
@@ -21,7 +20,7 @@
 
 .trust-title {
   font-size: var(--font-h1);
-  font-weight: 700;
+  font-weight: var(--fw-title);
   line-height: var(--lh-tight);
   color: var(--color-primary);
   margin-bottom: 70px;

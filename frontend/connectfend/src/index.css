@@ -23,6 +23,19 @@
   --font-hero: clamp(2.5rem, 6vw, 3.5rem);
   --font-big: clamp(2.25rem, 5vw + 1rem, 3.5rem);
 
+  /* Weight roles */
+  --fw-title: 700;
+  --fw-subtitle: 600;
+  --fw-h1: var(--fw-title);
+  --fw-h2: var(--fw-subtitle);
+  --fw-h3: var(--fw-subtitle);
+  --fw-h4: var(--fw-subtitle);
+  --fw-body: 400;
+  --fw-body-strong: 500;
+  --fw-title-strong: 800;
+  --fw-light: 300;
+  --fw-lightest: 100;
+
   /* Line Heights */
   --lh-tight: 1.2;
   --lh-base: 1.6;
@@ -102,31 +115,35 @@ h6 {
   font-family: var(--font-main);
   color: var(--color-text-main);
   line-height: var(--lh-tight);
-  font-weight: 700;
 }
 
 h1 {
   font-size: var(--font-h1);
+  font-weight: var(--fw-h1);
   margin-bottom: 0;
 }
 
 h2 {
   font-size: var(--font-h2);
+  font-weight: var(--fw-h2);
   margin-bottom: 0;
 }
 
 h3 {
   font-size: var(--font-h3);
+  font-weight: var(--fw-h3);
   margin-bottom: 0;
 }
 
 h4 {
   font-size: var(--font-h4);
+  font-weight: var(--fw-h4);
   margin-bottom: 0;
 }
 
 p {
   font-size: var(--font-body);
+  font-weight: var(--fw-body);
   line-height: var(--lh-base);
   margin-bottom: 1rem;
   color: inherit;
@@ -156,6 +173,7 @@ ol {
 
 li {
   font-size: var(--font-body);
+  font-weight: var(--fw-body);
   line-height: var(--lh-base);
   margin-bottom: 0.5rem;
 }
@@ -165,7 +183,7 @@ button {
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
-  font-weight: 500;
+  font-weight: var(--fw-body-strong);
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;

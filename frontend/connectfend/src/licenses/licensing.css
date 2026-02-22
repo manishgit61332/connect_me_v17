@@ -1,16 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
 
 .license-section {
   width: 100%;
   padding: var(--spacing-section) 0;
   text-align: center;
-  font-family: "Oxygen", sans-serif;
+  font-family: var(--font-main);
 }
 
 .license-title {
   font-size: var(--font-h1);
   color: var(--color-primary);
-  font-weight: 700;
+  font-weight: var(--fw-title);
   line-height: var(--lh-tight);
   margin-bottom: 50px;
 }
@@ -50,7 +49,7 @@
 
 .cert-label {
   font-size: var(--font-body-sm);
-  font-weight: 600;
+  font-weight: var(--fw-subtitle);
   color: var(--color-text-body);
   margin: 0;
   text-align: center;

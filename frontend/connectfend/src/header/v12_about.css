@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
 
 .about-wrapper {
-  font-family: "Oxygen", sans-serif;
+  font-family: var(--font-main);
   color: var(--color-text-dark);
 }
 
@@ -38,7 +37,7 @@
 
 .about-hero-overlay h1 {
   font-size: var(--font-big);
-  font-weight: 700;
+  font-weight: var(--fw-title);
   margin-bottom: 5px;
 }
 
@@ -48,7 +47,7 @@
 
 
 .about-section {
-  font-family: "Oxygen", sans-serif;
+  font-family: var(--font-main);
   padding: var(--spacing-section-mobile) var(--spacing-section);
   /* More side padding for breathing room */
   color: var(--color-text-dark);
@@ -92,7 +91,7 @@
   color: white;
   padding: 10px;
   text-align: left;
-  font-weight: 700;
+  font-weight: var(--fw-title);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   font-size: var(--font-body);
@@ -142,7 +141,7 @@
 
 .about-card-title {
   font-size: var(--font-h3);
-  font-weight: 700;
+  font-weight: var(--fw-title);
   color: #009e5c;
   /* green like screenshot */
   margin-bottom: 10px;
@@ -150,7 +149,7 @@
 
 .about-card-sub {
   font-size: 30px;
-  font-weight: 600;
+  font-weight: var(--fw-subtitle);
   margin-bottom: 20px;
 }
 
@@ -196,7 +195,7 @@
 
 .iso-label {
   font-size: 36px;
-  font-weight: 600;
+  font-weight: var(--fw-subtitle);
   color: #d96f1a;
   /* same orange as screenshot */
   margin-top: 20px;
@@ -211,7 +210,7 @@
 .founder-title {
   text-align: center;
   font-size: var(--font-h2);
-  font-weight: 700;
+  font-weight: var(--fw-title);
   line-height: var(--lh-tight);
   color: var(--color-primary);
   margin-bottom: 40px;
@@ -244,7 +243,7 @@
 
 .founder-name {
   font-size: 26px;
-  font-weight: 700;
+  font-weight: var(--fw-title);
   margin-bottom: 5px;
 }
 
@@ -292,7 +291,7 @@
 
 .tech-title {
   font-size: 60px;
-  font-weight: 700;
+  font-weight: var(--fw-title);
   color: white;
   line-height: 1;
   margin-bottom: 28px;

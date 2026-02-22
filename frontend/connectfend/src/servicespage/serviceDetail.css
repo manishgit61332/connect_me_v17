@@ -27,7 +27,7 @@
 
 .sub-item-title {
     font-size: var(--font-h4);
-    font-weight: 700;
+    font-weight: var(--fw-title);
     color: var(--color-text-main);
     margin-bottom: 10px;
 }
@@ -81,7 +81,7 @@
 
 .monitor-param {
     font-size: var(--font-h4);
-    font-weight: 700;
+    font-weight: var(--fw-title);
     margin-bottom: 8px;
 }
 
@@ -124,7 +124,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 700;
+    font-weight: var(--fw-title);
     font-size: 18px;
 }
 
@@ -134,7 +134,7 @@
 
 .how-title {
     font-size: var(--font-h4);
-    font-weight: 700;
+    font-weight: var(--fw-title);
     color: #222;
     margin-bottom: 6px;
 }
@@ -179,7 +179,7 @@
 
 .where-location {
     font-size: var(--font-h4);
-    font-weight: 700;
+    font-weight: var(--fw-title);
     color: #26AAE3;
     margin-bottom: 8px;
 }
@@ -356,7 +356,7 @@
 
 .sub-item-list-title {
     font-size: var(--font-body);
-    font-weight: 700;
+    font-weight: var(--fw-title);
     color: var(--color-primary);
     margin-bottom: 8px;
     text-transform: uppercase;
@@ -381,7 +381,7 @@
     color: var(--color-primary);
     position: absolute;
     left: 0;
-    font-weight: bold;
+    font-weight: var(--fw-title);
 }
 
 .alert-group {
@@ -390,7 +390,7 @@
 
 .alert-type {
     font-size: var(--font-body-sm);
-    font-weight: 700;
+    font-weight: var(--fw-title);
     color: #333;
     margin-bottom: 4px;
 }
@@ -435,7 +435,7 @@
 .accordion-title {
     margin: 0;
     font-size: 1.1rem;
-    font-weight: 700;
+    font-weight: var(--fw-title);
     color: #333;
 }
 
@@ -445,7 +445,7 @@
 
 .accordion-icon {
     font-size: 1.5rem;
-    font-weight: 300;
+    font-weight: var(--fw-light);
     color: #666;
     line-height: 1;
 }
@@ -475,7 +475,7 @@
     font-size: var(--font-body);
     line-height: 1.6;
     color: var(--color-text-body);
-    font-weight: 500;
+    font-weight: var(--fw-body-strong);
     background: #f0f9ff;
     padding: 25px;
     border-left: 5px solid var(--color-primary);
@@ -497,7 +497,7 @@
     color: var(--color-text-body);
     padding: 15px 20px;
     border-radius: 6px;
-    font-weight: 600;
+    font-weight: var(--fw-subtitle);
     font-size: var(--font-body-sm);
     text-transform: uppercase;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
@@ -550,7 +550,7 @@
     padding: 10px 0;
     border-bottom: 1px solid #eee;
     /* Light border */
-    font-weight: 500;
+    font-weight: var(--fw-body-strong);
     display: flex;
     align-items: center;
     color: var(--color-text-body);

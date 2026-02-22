@@ -1,13 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useMemo, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 import productData from "../data/productData";
 import SEO from "../components/SEO";
 import "./productDetails.css";
 
-import cloudgateImg from "../assets/products/Cloudgate mini.webp";
-import wirnetIndoorImg from "../assets/products/Wirnet LoraWan indoor gateway.webp";
-import wirnetOutdoorImg from "../assets/products/wirnet istation lorawan outdoor gateway.webp";
 import tosiFavicon from "../assets/tosi_fevicon.png";
 
 // --- TOSI SPECIFIC DATA (Parsed from Sheet Tab 55) ---
@@ -154,35 +151,18 @@ Connections
 export default function ProductDetails() {
   const { category, subcategory, productId, variantId } = useParams();
 
-  const [product, setProduct] = useState(null);
-  const [relatedProducts, setRelatedProducts] = useState([]);
-  const [breadcrumbs, setBreadcrumbs] = useState([]);
   const [activeTab, setActiveTab] = useState('features');
-  const [isVariantParentPage, setIsVariantParentPage] = useState(false);
-
-  // For specialized views
-  const [isTosiPage, setIsTosiPage] = useState(false);
   const [activeTosiVariant, setActiveTosiVariant] = useState(TOSI_VARIANTS[0]);
 
-
-
-  useEffect(() => {
-    // 1. Find Product & Context
+  const { product, relatedProducts, breadcrumbs, isVariantParentPage, isTosiPage } = useMemo(() => {
     let foundProduct = null;
     let foundCat = null;
     let foundSub = null;
-    let parentProduct = null; // To keep track of parent if we are in a variant
-
-    // Reset special views
-    setIsTosiPage(false);
-    setIsVariantParentPage(false);
+    let parentProduct = null;
+    let variantParentPage = false;
+    const tosiPage = productId === 'tosi-industrial-gateway' || productId === 'tosibox-industrial-gateway';
 
     if (productId) {
-      // Check for specialized Tosibox ID
-      if (productId === 'tosi-industrial-gateway' || productId === 'tosibox-industrial-gateway') {
-        setIsTosiPage(true);
-      }
-
       for (const cat of productData) {
         for (const sub of cat.subcategories) {
           const found = sub.products.find(p => p.id === productId);
@@ -191,17 +171,15 @@ export default function ProductDetails() {
             foundCat = cat;
             foundSub = sub;
 
-            // Check if this is a variant URL
             if (variantId && foundProduct.variants) {
               const variant = foundProduct.variants.find(v => v.id === variantId);
               if (variant) {
-                parentProduct = foundProduct; // Store parent
-                foundProduct = variant; // Set current product to variant
+                parentProduct = foundProduct;
+                foundProduct = variant;
               }
             }
-            // Check if parent product has variants (for parent page)
             else if (foundProduct.variants && !variantId) {
-              setIsVariantParentPage(true);
+              variantParentPage = true;
             }
 
             break;
@@ -212,48 +190,96 @@ export default function ProductDetails() {
     }
 
     if (!foundProduct) {
-      setProduct(null);
-    } else {
-      setProduct(foundProduct);
-
-      // 2. Set Breadcrumbs
-      const crumbs = [
-        { label: "Products", path: "/products" },
-        { label: foundCat.category, path: `/products/${foundCat.slug}` },
-        { label: foundSub.name, path: `/products/${foundCat.slug}/${foundSub.slug}` }
-      ];
-
-      // If it's a variant, add parent to breadcrumbs
-      if (parentProduct) {
-        crumbs.push({ label: parentProduct.name, path: `/products/${foundCat.slug}/${foundSub.slug}/${parentProduct.id}` });
-      }
-
-      crumbs.push({ label: foundProduct.name, path: "#" });
-      setBreadcrumbs(crumbs);
-
-      // 3. Set Related 
-      if (parentProduct) {
-        // If variant, show other variants from same parent
-        setRelatedProducts(parentProduct.variants
-          .filter(v => v.id !== foundProduct.id)
-          .map(v => ({ ...v, isVariant: true, parentId: parentProduct.id }))
-        );
-      } else {
-        // Generic: Same subcategory, exclude self
-        setRelatedProducts(foundSub.products
-          .filter(p => p.id !== foundProduct.id)
-          .slice(0, 4)
-          .map(p => ({ ...p, isVariant: false }))
-        );
-      }
+      return {
+        product: null,
+        relatedProducts: [],
+        breadcrumbs: [],
+        isVariantParentPage: false,
+        isTosiPage: tosiPage,
+      };
     }
-  }, [productId, variantId, category, subcategory]);
+
+    const crumbs = [
+      { label: "Products", path: "/products" },
+      { label: foundCat.category, path: `/products/${foundCat.slug}` },
+      { label: foundSub.name, path: `/products/${foundCat.slug}/${foundSub.slug}` },
+    ];
+
+    if (parentProduct) {
+      crumbs.push({ label: parentProduct.name, path: `/products/${foundCat.slug}/${foundSub.slug}/${parentProduct.id}` });
+    }
+
+    crumbs.push({ label: foundProduct.name, path: "#" });
+
+    const resolvedRelatedProducts = parentProduct
+      ? parentProduct.variants
+        .filter(v => v.id !== foundProduct.id)
+        .map(v => ({ ...v, isVariant: true, parentId: parentProduct.id }))
+      : foundSub.products
+        .filter(p => p.id !== foundProduct.id)
+        .slice(0, 4)
+        .map(p => ({ ...p, isVariant: false }));
+
+    return {
+      product: foundProduct,
+      relatedProducts: resolvedRelatedProducts,
+      breadcrumbs: crumbs,
+      isVariantParentPage: variantParentPage,
+      isTosiPage: tosiPage,
+    };
+  }, [productId, variantId]);
 
   if (!product) return <div className="pd-not-found">Loading or Product Not Found...</div>;
 
   // --- Helper to parse/render specs for Tosibox/LoRaWAN ---
   const renderSpecializedSpecs = (specsString) => {
-    // ... (existing code)
+    const lines = (specsString || "")
+      .split("\n")
+      .map((line) => line.trim())
+      .filter(Boolean);
+
+    if (lines.length === 0) return null;
+
+    const groups = [];
+    let currentTitle = "";
+    let currentItems = [];
+
+    const pushGroup = () => {
+      if (!currentTitle && currentItems.length === 0) return;
+      groups.push({
+        title: currentTitle,
+        items: currentItems,
+      });
+    };
+
+    lines.forEach((line) => {
+      const isSectionHeader = /:$/.test(line) || /^(ports|connections)$/i.test(line);
+      if (isSectionHeader) {
+        pushGroup();
+        currentTitle = line.replace(/:$/, "");
+        currentItems = [];
+        return;
+      }
+
+      currentItems.push(line.replace(/^•\s*/, ""));
+    });
+
+    pushGroup();
+
+    return (
+      <div className="tosi-specs-groups">
+        {groups.map((group, index) => (
+          <div key={`${group.title}-${index}`} className="tosi-specs-group">
+            {group.title && <h4 className="section-title">{group.title}</h4>}
+            <ul className="pd-features-list">
+              {group.items.map((item, itemIndex) => (
+                <li key={`${group.title}-${itemIndex}`}>{item}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    );
   };
 
   const traverseBack = () => {

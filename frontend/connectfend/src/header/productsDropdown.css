@@ -40,7 +40,7 @@
   /* Aligned with right padding */
 
   font-size: 14px;
-  font-weight: 600;
+  font-weight: var(--fw-subtitle);
   color: #26AAE3;
   /* Changed to blue to stand out against white background */
 
@@ -63,7 +63,7 @@
 
 .prod-main-title {
   font-size: 19px;
-  font-weight: 700;
+  font-weight: var(--fw-title);
   color: #111;
   margin: 0;
   margin-bottom: 30px;
@@ -95,7 +95,7 @@
 
 .prod-link-label {
   font-size: 14px !important;
-  font-weight: 500;
+  font-weight: var(--fw-body-strong);
   color: #444;
   line-height: 1.6 !important;
   transition: color 0.2s;

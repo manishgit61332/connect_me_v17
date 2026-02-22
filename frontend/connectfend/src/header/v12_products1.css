@@ -1,14 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
 
 .products-section {
   text-align: center;
   padding: var(--spacing-section) 0;
-  font-family: "Oxygen", sans-serif;
+  font-family: var(--font-main);
 }
 
 .products-title {
   font-size: var(--font-h1);
-  font-weight: 700;
+  font-weight: var(--fw-title);
   line-height: var(--lh-tight);
   color: var(--color-primary);
   margin-bottom: 50px;
@@ -113,12 +112,12 @@
   letter-spacing: 1px;
   color: var(--color-text-muted);
   margin: 0 0 6px 0;
-  font-weight: 700;
+  font-weight: var(--fw-title);
 }
 
 .product-title {
   font-size: var(--font-h4);
-  font-weight: 700;
+  font-weight: var(--fw-title);
   color: var(--color-text-body);
   margin: 0 0 12px 0;
   line-height: var(--lh-tight);
@@ -127,7 +126,7 @@
 .view-more-link {
   margin-top: auto;
   font-size: var(--font-body-sm);
-  font-weight: 700;
+  font-weight: var(--fw-title);
   color: var(--color-primary);
   text-decoration: none;
   display: inline-flex;

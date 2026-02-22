@@ -1,13 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
 
 .blogs-section {
   padding: 30px 0 60px;
-  font-family: "Oxygen", sans-serif;
+  font-family: var(--font-main);
 }
 
 .blogs-title {
   font-size: 34px;
-  font-weight: 700;
+  font-weight: var(--fw-title);
   margin-left: 60px;
   margin-bottom: 25px;
   color: #000;
@@ -61,7 +60,7 @@
 
 .rm-title {
   font-size: 28px;
-  font-weight: 700;
+  font-weight: var(--fw-title);
   line-height: 1.25;
   margin-bottom: 12px;
   color: #000;
@@ -95,7 +94,7 @@
 .rm-read span {
   color: #26AAE3;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: var(--fw-body-strong);
 }
 
 /* ===========================
@@ -117,7 +116,7 @@
 }
 
 .pagination .active {
-  font-weight: 700;
+  font-weight: var(--fw-title);
   text-decoration: underline;
 }
 
